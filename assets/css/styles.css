@@ -20,6 +20,30 @@
   text-align: center;
 }
 
+.social-links {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.social-links > li {
+  position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+  gap: 10px;
+}
+
+.social-links > li > span {
+  line-height: 1;
+}
+
+.link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
 @media screen and (width < 768px) {
   .section-img-with-text {
     --img-with-text-gap: 50px;
