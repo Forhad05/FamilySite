@@ -1,448 +1,98 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="theme-color" content="">
+  <link rel="canonical" href=""> -->
 
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
 
-  <!-- ===============================================-->
-  <!--    Document Title-->
-  <!-- ===============================================-->
-  <title>Productly | Design Agency Landing Page UI</title>
+  <title>Global Education Pathways</title>
+  <!-- <meta name="description" content=""> -->
 
+  <link rel="preload" href="./assets/js/critical.js" as="script">
+  <link rel="preload" href="./assets/css/critical.css" as="style">
 
-  <!-- ===============================================-->
-  <!--    Favicons-->
-  <!-- ===============================================-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
-  <link rel="manifest" href="assets/img/favicons/manifest.json">
-  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
-  <meta name="theme-color" content="#ffffff">
+  <script src="./assets/js/critical.js" defer="defer"></script>
+  <script src="./assets/js/theme.js" defer="defer"></script>
 
-
-  <style>
-    @font-face {
-      font-family: "Poppins";
-      src: url("../assets/fonts/Poppins-Regular.woff") format("woff");
-      src: local("Poppins Regular"),
-        local("Poppins-Regular"),
-        url("../assets/fonts/Poppins-Regular.woff") format("woff"),
-        url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("../assets/fonts/Poppins-Medium.woff") format("woff");
-      src: local("Poppins Medium"),
-        local("Poppins-Medium"),
-        url("../assets/fonts/Poppins-Medium.woff") format("woff"),
-        url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("../assets/fonts/Poppins-SemiBold.woff") format("woff");
-      src: local("Poppins SemiBold"),
-        local("Poppins-SemiBold"),
-        url("../assets/fonts/Poppins-SemiBold.woff") format("woff"),
-        url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
-      font-weight: 600;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "Poppins";
-      src: url("../assets/fonts/Poppins-Bold.woff") format("woff");
-      src: local("Poppins Bold"),
-        local("Poppins-Bold"),
-        url("../assets/fonts/Poppins-Bold.woff") format("woff"),
-        url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
-
-
-  <!-- ===============================================-->
-  <!--    Stylesheets-->
-  <!-- ===============================================-->
-  <link href="assets/css/theme.css" rel="stylesheet" />
-  <link href="assets/css/styles.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="./assets/css/critical.css">
+  <link rel="stylesheet" href="./assets/css/theme.css">
 </head>
 
-
 <body>
-  <!-- ===============================================-->
-  <!--    Main Content-->
-  <!-- ===============================================-->
-  <main class="main" id="top">
-    <section class="section-header">
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container">
-          <a class="navbar-brand" href="./home.html"><img src="assets/img/logo.svg" height="31" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="./home.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="./about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="./services.html">Services</a></li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="./certification.html">Certification</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="./contact.html">Contact</a></li>
+  <sticky-header class="section--header section-header-group">
+    <div class="header-wrapper page-width">
+      <header class="header">
+        <div class="header-logo">
+          <h1 class="hidden">Global Education Pathways</h1>
+          <a href="./home.html" class="header-logo--link">
+            <img src="./assets/img/Logo.png" alt="GEP Logo" width="170" class="header-logo--image">
+          </a>
+        </div>
+
+        <div class="navigation-inline">
+          <nav class="navigation-links" aria-label="Primary Navigation">
+            <ul class="navigation-links--list list-unstyled" role="list">
+              <li><a class="nav-link nav-link--parent link-unstyled" href="./home.html">Home</a></li>
+              <li><a class="nav-link nav-link--parent link-unstyled" href="#">Solutions</a></li>
+              <li><a class="nav-link nav-link--parent link-unstyled" href="#">Who We Serve</a></li>
+              <li><a class="nav-link nav-link--parent link-unstyled" href="#">Self-Help</a></li>
+              <li><a class="nav-link nav-link--parent link-unstyled" href="#">About Us</a></li>
             </ul>
+          </nav>
+        </div>
+
+        <div class="header-icons">
+          <div class="header-icons--list">
+            <a href="https://www.facebook.com/profile.php?id=61555824028180"
+              class="header-icon header-icon--facebook link-unstyled" aria-label="Facebook" title="Facebook">
+              <span class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="20" height="20" x="0" y="0" viewBox="0 0 49.652 49.652"
+                  style="enable-background:new 0 0 512 512" xml:space="preserve" class="icon icon-facebook">
+                  <g>
+                    <path
+                      d="M24.826 0C11.137 0 0 11.137 0 24.826c0 13.688 11.137 24.826 24.826 24.826 13.688 0 24.826-11.138 24.826-24.826C49.652 11.137 38.516 0 24.826 0zM31 25.7h-4.039v14.396h-5.985V25.7h-2.845v-5.088h2.845v-3.291c0-2.357 1.12-6.04 6.04-6.04l4.435.017v4.939h-3.219c-.524 0-1.269.262-1.269 1.386v2.99h4.56z"
+                      fill="currentColor"></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61555824028180"
+              class="header-icon header-icon--whatsapp link-unstyled" aria-label="WhatsApp" title="WhatsApp">
+              <span class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                  xml:space="preserve" class="icon icon-whatsapp">
+                  <g>
+                    <path
+                      d="M256 0C114.637 0 0 114.637 0 256s114.637 256 256 256 256-114.637 256-256S397.363 0 256 0zm5.426 405.05c-.004 0 .004 0 0 0h-.063c-25.644-.01-50.843-6.44-73.222-18.644l-81.223 21.301 21.738-79.375c-13.41-23.227-20.465-49.578-20.453-76.574.035-84.453 68.77-153.16 153.223-153.16 40.984.015 79.457 15.968 108.383 44.918 28.93 28.953 44.851 67.437 44.836 108.363-.036 84.457-68.778 153.172-153.22 153.172zm0 0"
+                      fill="currentColor"></path>
+                    <path
+                      d="M261.477 124.469c-70.247 0-127.375 57.105-127.407 127.3-.007 24.055 6.727 47.481 19.473 67.75l3.027 4.817-12.867 46.98 48.2-12.64 4.652 2.758c19.55 11.601 41.965 17.738 64.816 17.746h.05c70.192 0 127.321-57.11 127.352-127.309.012-34.02-13.222-66.004-37.265-90.066-24.043-24.063-56.02-37.325-90.031-37.336zm74.906 182.035c-3.192 8.937-18.485 17.098-25.84 18.2-6.598.983-14.941 1.394-24.113-1.517-5.563-1.765-12.692-4.12-21.828-8.062-38.403-16.578-63.485-55.234-65.399-57.79-1.914-2.554-15.633-20.753-15.633-39.593 0-18.836 9.89-28.097 13.399-31.926 3.511-3.832 7.66-4.789 10.21-4.789 2.551 0 5.106.024 7.337.133 2.351.117 5.507-.894 8.613 6.57 3.191 7.665 10.848 26.5 11.805 28.415.957 1.917 1.593 4.152.32 6.707-1.277 2.554-5.52 8.066-9.57 13.09-1.7 2.105-3.914 3.98-1.68 7.812 2.23 3.828 9.918 16.363 21.297 26.512 14.625 13.039 26.96 17.078 30.789 18.996 3.824 1.914 6.058 1.593 8.293-.957 2.23-2.555 9.57-11.176 12.12-15.008 2.552-3.832 5.106-3.192 8.614-1.914 3.512 1.273 22.332 10.535 26.16 12.449 3.828 1.918 6.38 2.875 7.336 4.473.961 1.597.961 9.258-2.23 18.199zm0 0"
+                      fill="currentColor"></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
-      </nav>
-    </section>
-
-
-
-
-
-    <div class="main-layout">
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="section--hero section-img-with-text pt-7">
-        <div class="container">
-          <div class="row align-items-center img-first--mobile">
-            <div class="col-md-6 text-md-start text-center py-6">
-              <h1 class="mb-4 fs-9 fw-bold">Study in Australia</h1>
-              <p class="mb-6 lead text-secondary">Living, Programs, Universities, Academics, What to prepare<br
-                  class="d-none d-xl-block" /> - All Here!</p>
-              <div class="text-center text-md-start"><a class="btn btn-warning me-3 btn-lg" href="./services.html"
-                  role="button">Get
-                  started</a><a class="btn btn-link text-warning fw-medium" href="#!" role="button"
-                  data-bs-toggle="modal" data-bs-target="#popupVideo"><span class="fas fa-play me-2"></span>Watch the
-                  video </a></div>
-            </div>
-            <div class="col-md-6 text-end"><img class="img-fluid" src="assets/img/hero/hero-img.png" alt="" /></div>
-          </div>
-        </div>
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="section-img-with-text pt-5" id="validation">
-
-        <div class="container">
-          <div class="row img-first--mobile">
-            <div class="col-lg-6">
-              <h5 class="text-secondary">Preparing Financial Documents</h5>
-              <h2 class="mb-2 fs-7 fw-bold">Biggest Pain Points. And How We Can Help</h2>
-              <p class="mb-4 fw-medium text-secondary">
-                Choosing the right course and university can be daunting for Bangladeshi students, especially when
-                considering future career paths, budget constraints, and location preferences. Here's how we help:
-              </p>
-              <h4 class="fs-1 fw-bold">Career Impact</h4>
-              <p class="mb-4 fw-medium text-secondary">We evaluate your academic and professional background to help you
-                choose a career path that suits your future goals, considering both Bangladesh and Australia's job
-                markets.</p>
-              <h4 class="fs-1 fw-bold">Budget</h4>
-              <p class="mb-4 fw-medium text-secondary">Studying abroad can be expensive. We work with both you and your
-                family to create a realistic financial plan, ensuring that your chosen path aligns with your budget.</p>
-              <h4 class="fs-1 fw-bold">Location</h4>
-              <p class="mb-4 fw-medium text-secondary">Australia is vast, and choosing the right city is important. With
-                our team based in Australia, we offer first-hand insights into different locations and how they impact
-                your lifestyle and future opportunities.</p>
-            </div>
-            <div class="col-lg-6"><img class="img-fluid" src="assets/img/validation/validation.png" alt="" /></div>
-          </div>
-        </div>
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="section-img-with-text pt-5" id="marketer">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6"><img class="img-fluid" src="assets/img/marketer/marketer.png" alt="" /></div>
-            <div class="col-lg-6">
-              <h5 class="text-secondary">The Entire Process</h5>
-              <h4 class="fw-bold fs-1">From University Selection to Visa Processing</h4>
-              <div class="d-flex align-items-center mb-3"> <img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Research your options and create a shortlist based on your
-                  preferences and goals.</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Set up consultations with our experts to guide you based on
-                  your
-                  shortlist.
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Prepare for, and give English proficiency tests like IELTS,
-                  PTE,
-                  TOEFL, or CAE.
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Gather all necessary documents and ensure your finances are in
-                  order.
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Apply to universities early to allow for a smooth processing
-                  period.
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">
-                  Once you receive an offer and clear GTE, secure financing for your
-                  tuition fees.
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">
-                  Submit your visa application after receiving the Confirmation of
-                  Enrollment (COE).
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">
-                  Get ready to embark on your new adventure in Australia!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="section-img-with-text pt-5" id="manager">
-
-        <div class="container">
-          <div class="row img-first--mobile">
-            <div class="col-lg-6">
-              <h5 class="text-secondary">Easier decisions</h5>
-              <p class="fs-7 fw-bold mb-2">Documents Checklist</p>
-              <!-- <p class="mb-4 fw-medium text-secondary">
-                The Myspace page defines the individual,his or her
-                characteristics, traits, personal choices and the overall<br />personality of the person.
-              </p> -->
-              <div class="d-flex align-items-center mb-3"> <img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Valid passport (for you and family members included in the
-                  application)</p>
-              </div>
-              <div class="d-flex align-items-center mb-3"> <img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">National ID cards and birth certificates </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">All academic documents (certificates, transcripts,
-                  recommendation
-                  letters)
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Updated resume or CV
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Employment documents (confirmation certificates, bank
-                  statements,
-                  salary slips, tax returns)
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">Savings certificates (FDR, DPS)
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">
-                  Sponsor's valid ID
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">
-                  Bank statements of the sponsor(s)
-                </p>
-              </div>
-              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png"
-                  width="35" alt="tick" />
-                <p class="fw-medium mb-0 text-secondary">
-                  Financial proof documents (employment/business documents, rental agreements, tax assessments)
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6"><img class="img-fluid" src="assets/img/manager/manager.png" alt="" /></div>
-          </div>
-        </div>
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="section-img-with-text py-md-11 py-8" id="superhero">
-
-        <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block background-position-top"
-          style="background-image:url(assets/img/superhero/oval.png);opacity:.5; background-position: top !important ;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
-              <h1 class="fw-bold mb-4 fs-3">
-                Top Reasons & Benefits
-              </h1>
-              <h1 class="fw-bold mb-4 fs-7">Why Should Bangladeshi Students Study in Australia</h1>
-              <p class="mb-5 text-info fw-medium">
-                Top Reasons & Benefits
-                Why Should Bangladeshi Students Study in Australia
-
-                Australia is a leading education destination offering top-notch academics, a safe and friendly
-                environment, and excellent real-world exposure. It's an ideal place for Bangladeshi students to achieve
-                their dreams and build a bright future.
-              </p>
-              <a href="./contact.html" class="btn btn-warning btn-md">Contact our expert</a>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
+      </header>
     </div>
+  </sticky-header>
 
+  <div id="MainContent" class="content-for-layout"></div>
 
-
-
-    <div class="section-footer--group">
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="section-footer pb-2 pb-lg-5">
-
-        <div class="container">
-          <div class="row border-top border-top-secondary pt-7">
-            <div
-              class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1 footer-block--logo">
-              <img class="mb-4" src="assets/img/logo.svg" width="184" alt="" />
-            </div>
-            <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2">
-              <p class="fs-2 mb-lg-3">Quick Links</p>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="./about.html">About
-                    us</a></li>
-                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none"
-                    href="./services.html">Services</a></li>
-                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none"
-                    href="./certification.html">Certification</a></li>
-                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none"
-                    href="./contact.html">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-4 order-md-4 order-lg-3">
-              <p class="fs-2 mb-lg-3">Legal notice</p>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Privacy Policy</a>
-                </li>
-                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Terms of Service</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-2 order-md-2 order-lg-4 footer-block--text">
-              <p class="fs-2 mb-lg-3">About us</p>
-              <p class="mb-3 text-info fw-medium">
-                Australia Student Consulting - Guiding your path to academic success down under. </p>
-              <p class="text-info fw-medium footer-contact"><a href="tel:+61402 967 483">+61402 967 483</a></p>
-              <p class="text-info fw-medium footer-contact"><a
-                  href="mailto:global.education_path@yahoo.com">global.education_path@yahoo.com</a></p>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="text-center py-0">
-
-        <div class="container">
-          <div class="container border-top py-3">
-            <div class="row justify-content-between">
-              <div class="col-12 col-md-auto mb-1 mb-md-0">
-                <p class="mb-0">Copyright® 2025</p>
-              </div>
-              <div class="col-12 col-md-auto">
-                <p class="mb-0">
-                  Made by <a class="text-decoration-none ms-1" href="https://www.facebook.com/mahafuzul.haq"
-                    target="_blank">MH Forhad</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
+  <footer class="section--footer">
+    <div class="footer-wrapper page-width">
+      <p class="footer-text">&copy; 2024 Global Education Pathways. All rights reserved.</p>
     </div>
-  </main>
-  <!-- ===============================================-->
-  <!--    End of Main Content-->
-  <!-- ===============================================-->
+  </footer>
 </body>
 
 </html>
