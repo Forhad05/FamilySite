@@ -114,11 +114,6 @@
   }
 
   .section--hero-buttons {
-    container-type: inline-size;
-    container-name: hero-buttons;
-  }
-
-  .hero-buttons--grid {
     display: flex;
     gap: var(--section-hero-buttons-gap);
     align-items: center;
@@ -140,7 +135,7 @@
   }
 
   @media screen and (width < 1025px) {
-    .hero-buttons--grid {
+    .section--hero-buttons {
       --section-hero-buttons-gap: 1rem;
       align-items: start;
       flex-direction: column;
@@ -153,7 +148,7 @@
       text-align: center;
     }
 
-    .hero-buttons--grid {
+    .section--hero-buttons {
       align-items: center;
     }
 
