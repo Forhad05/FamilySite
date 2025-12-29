@@ -27,6 +27,22 @@
   <sticky-header class="section--header section-header-group">
     <div class="header-wrapper page-width">
       <header class="header">
+        <div class="header-drawer large-up-hide">
+          <a class="header-icon header-icon--facebook link-unstyled">
+            <span class="svg-wrapper">
+              <svg class="icon icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="384" height="171"
+                viewBox="0 0 384 171" fill="none">
+                <path
+                  d="M6.24839 6.24839C2.24761 10.2492 0 15.6754 0 21.3333C0 26.9913 2.24761 32.4175 6.24839 36.4183C10.2492 40.4191 15.6754 42.6667 21.3333 42.6667H362.667C368.325 42.6667 373.751 40.4191 377.752 36.4183C381.752 32.4175 384 26.9913 384 21.3333C384 15.6754 381.752 10.2492 377.752 6.24839C373.751 2.24762 368.325 0 362.667 0H21.3333C15.6754 0 10.2492 2.24762 6.24839 6.24839Z"
+                  fill="currentColor"></path>
+                <path
+                  d="M6.24839 134.248C2.24761 138.249 0 143.675 0 149.333C0 154.991 2.24761 160.417 6.24839 164.418C10.2492 168.419 15.6754 170.667 21.3333 170.667H234.667C240.325 170.667 245.751 168.419 249.752 164.418C253.752 160.417 256 154.991 256 149.333C256 143.675 253.752 138.249 249.752 134.248C245.751 130.248 240.325 128 234.667 128H21.3333C15.6754 128 10.2492 130.248 6.24839 134.248Z"
+                  fill="currentColor"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+
         <div class="header-logo">
           <h1 class="hidden">Global Education Pathways</h1>
           <a href="./home.html" class="header-logo--link">
@@ -34,14 +50,15 @@
           </a>
         </div>
 
-        <div class="navigation-inline">
+        <div class="navigation-inline large-down-hide">
           <nav class="navigation-links" aria-label="Primary Navigation">
             <ul class="navigation-links--list list-unstyled" role="list">
-              <li><a class="nav-link nav-link--parent link-unstyled" href="./home.html">Home</a></li>
-              <li><a class="nav-link nav-link--parent link-unstyled" href="#">Solutions</a></li>
-              <li><a class="nav-link nav-link--parent link-unstyled" href="#">Who We Serve</a></li>
-              <li><a class="nav-link nav-link--parent link-unstyled" href="#">Self-Help</a></li>
-              <li><a class="nav-link nav-link--parent link-unstyled" href="#">About Us</a></li>
+              <li><a class="nav-link nav-link--parent reversed-link link-unstyled active" href="./home.html">Home</a>
+              </li>
+              <li><a class="nav-link nav-link--parent reversed-link link-unstyled" href="#">Solutions</a></li>
+              <li><a class="nav-link nav-link--parent reversed-link link-unstyled" href="#">Who We Serve</a></li>
+              <li><a class="nav-link nav-link--parent reversed-link link-unstyled" href="#">Self-Help</a></li>
+              <li><a class="nav-link nav-link--parent reversed-link link-unstyled" href="#">About Us</a></li>
             </ul>
           </nav>
         </div>
@@ -88,21 +105,43 @@
 
   <div id="MainContent" class="content-for-layout">
     <section class="section section--hero">
-      <div class="section--hero-media">
-        <img src="./assets/img/Banner.svg" alt="Hero Image" class="section--hero-image">
-      </div>
-      <div class="page-width">
-        <div class="section__header text-center">
-          <h2 class="section__header-title">Welcome to Global Education Pathways</h2>
-          <p class="section__header-subtitle">Your Gateway to Quality Education Worldwide</p>
+      <div class="hero-banner">
+        <div class="section--hero-media">
+          <img src="./assets/img/Hero banner desktop.png" alt="Hero Image" class="section--hero-image">
         </div>
-
-        <div class="section__content">
-          <p>At Global Education Pathways, we are dedicated to connecting students with top-tier educational institutions around the world. Whether you're looking for undergraduate programs, postgraduate studies, or specialized courses, we provide comprehensive guidance and support throughout your educational journey.</p>
-
-          <p>Our team of experienced advisors is here to help you navigate the complexities of international education, from selecting the right program to securing scholarships and visas. We believe that education is a powerful tool for personal and professional growth, and we are committed to helping you achieve your academic goals.</p>
-
-          <p>Explore our website to learn more about our services, the institutions we partner with, and how we can assist you in making informed decisions about your education. Join us at Global Education Pathways and take the first step towards a brighter future!</p>
+        <div class="section--hero-content page-width text-center">
+          <div class="section--hero-box section--hero-box-transparent">
+            <h2 class="section--hero-subtitle uppercase">The original and the best</h2>
+            <h2 class="section--hero-title">Welcome to <strong>Global Education Pathways</strong></h2>
+            <div class="section--hero-text rte">
+              <p>Your Gateway to Quality Education Worldwide</p>
+            </div>
+            <div class="section--hero-buttons">
+              <div class="hero-buttons--grid">
+                <a href="#" class="button button--primary">
+                  Get Free Consultation
+                  <span class="svg-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.20874 13H16.3787L11.4987 17.88C11.1087 18.27 11.1087 18.91 11.4987 19.3C11.8887 19.69 12.5187 19.69 12.9087 19.3L19.4987 12.71C19.8887 12.32 19.8887 11.69 19.4987 11.3L12.9187 4.69997C12.5287 4.30997 11.8987 4.30997 11.5087 4.69997C11.1187 5.08997 11.1187 5.71997 11.5087 6.10997L16.3787 11H5.20874C4.65874 11 4.20874 11.45 4.20874 12C4.20874 12.55 4.65874 13 5.20874 13Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                </a>
+                <span class="button-choice text-body">or Talk to an Expert</span>
+                <a href="#" class="button button--secondary">
+                  <span class="svg-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17.8605 16.5294C17.8605 16.5294 17.0767 17.2907 16.8846 17.5139C16.5717 17.8441 16.203 18 15.7197 18C15.6733 18 15.6237 18 15.5772 17.9969C14.6571 17.9389 13.8021 17.5842 13.1608 17.2815C11.4073 16.4438 9.86759 15.2545 8.58811 13.7473C7.53169 12.4907 6.82534 11.3289 6.35754 10.0815C6.06942 9.32026 5.96409 8.72713 6.01056 8.16764C6.04154 7.80994 6.18095 7.51338 6.43809 7.25962L7.49451 6.21707C7.64631 6.07643 7.80741 6 7.96541 6C8.16058 6 8.31858 6.11618 8.41772 6.21401C8.42082 6.21707 8.42391 6.22013 8.42701 6.22318C8.61599 6.39745 8.79568 6.57783 8.98466 6.77045C9.08069 6.86828 9.17983 6.96611 9.27897 7.06701L10.1247 7.90166C10.4531 8.22573 10.4531 8.52535 10.1247 8.84943C10.0349 8.93809 9.94814 9.02675 9.8583 9.11236C9.59806 9.37529 9.80249 9.17354 9.53296 9.41201C9.52677 9.41813 9.52057 9.42119 9.51747 9.4273C9.25104 9.69023 9.30061 9.94705 9.35638 10.1213C9.35947 10.1305 9.36257 10.1397 9.36567 10.1488C9.58563 10.6747 9.89543 11.17 10.3663 11.76L10.3694 11.7631C11.2245 12.8026 12.126 13.6128 13.1205 14.2334C13.2475 14.3129 13.3776 14.3771 13.5015 14.4383C13.613 14.4933 13.7184 14.5453 13.8082 14.6003C13.8206 14.6064 13.833 14.6156 13.8454 14.6217C13.9507 14.6737 14.0499 14.6981 14.1521 14.6981C14.4092 14.6981 14.5703 14.5391 14.623 14.4872L15.2303 13.8879C15.3356 13.7839 15.5029 13.6586 15.6981 13.6586C15.8901 13.6586 16.0481 13.7778 16.1442 13.8818C16.1473 13.8848 16.1473 13.8848 16.1504 13.8879L17.8574 15.5725C18.1765 15.8843 17.8605 16.5294 17.8605 16.5294Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  +1 012 456-7890
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -115,11 +154,18 @@
         </div>
 
         <div class="section__content">
-          <p>At Global Education Pathways, we are dedicated to connecting students with top-tier educational institutions around the world. Whether you're looking for undergraduate programs, postgraduate studies, or specialized courses, we provide comprehensive guidance and support throughout your educational journey.</p>
+          <p>At Global Education Pathways, we are dedicated to connecting students with top-tier educational
+            institutions around the world. Whether you're looking for undergraduate programs, postgraduate studies, or
+            specialized courses, we provide comprehensive guidance and support throughout your educational journey.</p>
 
-          <p>Our team of experienced advisors is here to help you navigate the complexities of international education, from selecting the right program to securing scholarships and visas. We believe that education is a powerful tool for personal and professional growth, and we are committed to helping you achieve your academic goals.</p>
+          <p>Our team of experienced advisors is here to help you navigate the complexities of international education,
+            from selecting the right program to securing scholarships and visas. We believe that education is a powerful
+            tool for personal and professional growth, and we are committed to helping you achieve your academic goals.
+          </p>
 
-          <p>Explore our website to learn more about our services, the institutions we partner with, and how we can assist you in making informed decisions about your education. Join us at Global Education Pathways and take the first step towards a brighter future!</p>
+          <p>Explore our website to learn more about our services, the institutions we partner with, and how we can
+            assist you in making informed decisions about your education. Join us at Global Education Pathways and take
+            the first step towards a brighter future!</p>
         </div>
       </div>
     </section>
