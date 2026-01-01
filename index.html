@@ -24,11 +24,11 @@
 </head>
 
 <body>
-  <sticky-header class="section--header section-header-group">
-    <div class="header-wrapper page-width">
+  <div class="section__header section-header-group">
+    <sticky-header class="header-wrapper page-width" data-sticky-type="on-scroll-up">
       <header class="header">
         <div class="header-drawer large-up-hide">
-          <a class="header-icon header-icon--facebook link-unstyled">
+          <a class="header-icon header-icon--drawer link-unstyled">
             <span class="svg-wrapper">
               <svg class="icon icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="384" height="171"
                 viewBox="0 0 384 171" fill="none">
@@ -100,8 +100,8 @@
           </div>
         </div>
       </header>
-    </div>
-  </sticky-header>
+    </sticky-header>
+  </div>
 
   <div id="MainContent" class="content-for-layout">
     <section class="section section--hero">
@@ -110,14 +110,14 @@
           <img src="./assets/img/Hero banner desktop.png" alt="Hero Image" class="section--hero-image">
         </div>
         <div class="section--hero-content page-width text-center">
-          <div class="section--hero-box section--hero-box-transparent">
+          <div class="section--hero-box section--hero-box-transparent rte-box">
             <h2 class="section--hero-subtitle uppercase">The original and the best</h2>
             <h2 class="section--hero-title">Welcome to <strong>Global Education Pathways</strong></h2>
             <div class="section--hero-text rte">
               <p>Your Gateway to Quality Education Worldwide</p>
             </div>
             <div class="section--hero-buttons">
-              <a href="#" class="button button--primary">
+              <a href="#section-contact" class="button">
                 Get Free Consultation
                 <span class="svg-wrapper">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@
                 </span>
               </a>
               <span class="button-choice text-body">or Talk to an Expert</span>
-              <a href="#" class="button button--secondary">
+              <a href="tel:+1 012 456-7890" class="button">
                 <span class="svg-wrapper">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -144,26 +144,145 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="page-width">
-        <div class="section__header text-center">
-          <h2 class="section__header-title">Welcome to Global Education Pathways</h2>
-          <p class="section__header-subtitle">Your Gateway to Quality Education Worldwide</p>
+    <section id="section-contact" class="section section--contact">
+      <div class="page-width section--contact-box">
+        <div class="section-header rte center">
+          <h2 class="section-header-title">Schedule a free consultation</h2>
+          <div class="section-header-text rte">
+            <p>Get unique advice tailored to your situation. It's free, confidential, and without obligation.</p>
+          </div>
         </div>
 
-        <div class="section__content">
-          <p>At Global Education Pathways, we are dedicated to connecting students with top-tier educational
-            institutions around the world. Whether you're looking for undergraduate programs, postgraduate studies, or
-            specialized courses, we provide comprehensive guidance and support throughout your educational journey.</p>
+        <div class="section--contact-body flex flex-grow flex--fixed-col">
+          <div class="grid__item contact-body--form">
+            <div class="section--contact-form">
+              <form action="post">
+                <div class="field">
+                  <input type="text" class="field__input" id="contact-name" name="contact[name]" placeholder="Name"
+                    required>
+                  <label for="contact-name" class="field__label hidden">Name</label>
+                </div>
+                <div class="field">
+                  <input type="text" class="field__input" id="contact-email" name="contact[email]" placeholder="Email"
+                    required>
+                  <label for="contact-email" class="field__label hidden">Email</label>
+                </div>
+                <div class="field">
+                  <input type="text" class="field__input" id="contact-phone" name="contact[phone]"
+                    placeholder="Phone Number" required>
+                  <label for="contact-phone" class="field__label hidden">Phone Number</label>
+                </div>
+                <div class="field">
+                  <textarea class="field__input field__textarea" id="contact-message" name="contact[message]" rows="10"
+                    cols="auto" placeholder="Write us brief of your situation..." required></textarea>
+                  <label for="contact-message" class="field__label hidden">Write us brief of your situation...</label>
+                </div>
+                <div class="field-group-list">
+                  <label for="contact-checkbox" class="field-group-checkfield">
+                    <input type="checkbox" class="field__checkbox" id="contact-checkbox" name="contact[checkbox]"
+                      required></input>
+                    <span>I'd like to receive news, tips, & offers from ReputationDefender.</span>
+                  </label>
 
-          <p>Our team of experienced advisors is here to help you navigate the complexities of international education,
-            from selecting the right program to securing scholarships and visas. We believe that education is a powerful
-            tool for personal and professional growth, and we are committed to helping you achieve your academic goals.
-          </p>
+                  <div class="field-group-button">
+                    <button type="submit" class="button button--primary button-full-width">
+                      Schedule Your Consultation
+                      <span class="svg-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M5.20874 13H16.3787L11.4987 17.88C11.1087 18.27 11.1087 18.91 11.4987 19.3C11.8887 19.69 12.5187 19.69 12.9087 19.3L19.4987 12.71C19.8887 12.32 19.8887 11.69 19.4987 11.3L12.9187 4.69997C12.5287 4.30997 11.8987 4.30997 11.5087 4.69997C11.1187 5.08997 11.1187 5.71997 11.5087 6.10997L16.3787 11H5.20874C4.65874 11 4.20874 11.45 4.20874 12C4.20874 12.55 4.65874 13 5.20874 13Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
 
-          <p>Explore our website to learn more about our services, the institutions we partner with, and how we can
-            assist you in making informed decisions about your education. Join us at Global Education Pathways and take
-            the first step towards a brighter future!</p>
+                  <div class="field-group-message rte">
+                    <p>We will process your personal data submitted in this form in line with our Privacy Policy.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="grid__item grid__item-fixed contact-body--media">
+            <div class="section--contact-media center">
+              <img src="./assets/img/Contact image.png" alt="Contact image" class="section--contact-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="group-section" class="section group--section">
+      <div class="page-width group--section-box">
+        <div class="section-header rte center">
+          <h2 class="section-header-title">You deserve to be represented fairly and accurately online</h2>
+          <div class="section-header-text rte">
+            <p>No matter what threats you face online, Reputation Defender can help. We have solutions to protect your
+              privacy, correct misleading search results, and more.</p>
+          </div>
+        </div>
+
+        <div class="group--section-blocks">
+          <div class="group--section-block group--section-block-1 rte-box">
+            <h3 class="section-block--title center">Search results for individuals</h3>
+            <div class="block-img-text flex flex-grow flex--fixed-col">
+              <div class="grid__item grid__item-fixed block-body--media">
+                <div class="section--block-media center">
+                  <img src="./assets/img/Image with text Block-1.png" alt="Contact image" class="section--block-image">
+                </div>
+              </div>
+              <div class="grid__item block-body--content">
+                <div class="block-body--box rte">
+                  <p>
+                    Stedo Reputation offers valuable services to help individuals manage and influence the news and
+                    articles that appear in their Google search results. This service is particularly crucial since the
+                    first page of search results for your name can essentially serve as your online curriculum vitae
+                    (CV). It showcases your digital reputation to potential employers, clients, and anyone who might be
+                    searching for you.
+                  </p>
+                  <p>
+                    By ensuring that the information presented on Page 1 is accurate and positive, Stedo Reputation
+                    helps you put your best digital foot forward. This not only enhances your professional image but also
+                    maintains a favorable online presence. With Stedo Reputation's expertise, you can confidently manage
+                    your digital reputation, ensuring that what people find online reflects the best version of you.
+                  </p>
+                </div>
+                <button class="button button--primary">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="group--section-block group--section-block-1 rte-box">
+            <h3 class="section-block--title center">Search results for businesses</h3>
+            <div class="block-img-text flex flex-grow flex--fixed-col flex-reverse">
+              <div class="grid__item grid__item-fixed block-body--media">
+                <div class="section--block-media center">
+                  <img src="./assets/img/Image with text Block-2.png" alt="Contact image" class="section--block-image">
+                </div>
+              </div>
+              <div class="grid__item block-body--content">
+                <div class="block-body--box rte">
+                  <p>
+                    Stedo Reputation offers comprehensive online reputation management solutions specifically designed
+                    to help businesses address negative and misleading search results. In today's digital age, the first
+                    page of Google search results can significantly impact a business's reputation and, consequently,
+                    its bottom line. When potential customers encounter unfavorable or inaccurate information, it can
+                    deter them from engaging with the business, resulting in lost revenue and opportunities.
+                  </p>
+                  <p>
+                    By leveraging Stedo Reputation's expertise, businesses can effectively manage their online presence,
+                    ensuring that the information appearing on the first page of search results is accurate, positive,
+                    and reflective of their brand values. This proactive approach not only helps to mitigate the adverse
+                    effects of negative search results but also fosters trust and credibility among potential customers.
+                    With Stedo Reputation's tailored solutions, businesses can confidently navigate the complexities of
+                    their online reputation and maintain a strong, favorable presence in the digital landscape.
+                  </p>
+                </div>
+                <button class="button button--primary">Learn More</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -175,4 +294,5 @@
     </div>
   </footer>
 </body>
+
 </html>
