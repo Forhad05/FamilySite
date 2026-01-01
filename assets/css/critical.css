@@ -276,11 +276,11 @@ details>* {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  -moz-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  -ms-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  -o-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 
   @media screen and (width < 1025px) {
     min-height: 5rem;
@@ -307,11 +307,17 @@ details>* {
 .button--primary {
   --color-button: 255, 255, 255;
   background: var(--color-button-background-gradient);
-  border-width: 0;
+  outline: 0.2rem solid rgba(var(--color-button-border), 0);
+}
+
+.button--primary,
+.button--primary:hover {
+  border: none;
 }
 
 .button--primary:hover {
   background: var(--color-button-background-gradient-hover);
+  outline: 0.2rem solid rgba(var(--color-button-hover-border), 1);
 }
 
 @media screen and (width < 750px) {
@@ -371,19 +377,19 @@ details>* {
   --rte-box-width: 100%;
   max-width: var(--rte-box-width);
 
-  & > * {
+  &>* {
     margin-bottom: 0;
   }
 
-  & > *:first-child {
+  &>*:first-child {
     margin-top: 0;
   }
 
-  & > *:first-child {
+  &>*:first-child {
     margin-top: 0;
   }
 
-  & > * + * {
+  &>*+* {
     margin-top: var(--rte-gap);
   }
 }
@@ -417,7 +423,7 @@ details>* {
     height: var(--field-textarea-height, auto);
   }
 
-  & + .field {
+  &+.field {
     margin-top: 1rem;
   }
 
@@ -451,15 +457,15 @@ details>* {
 
   & {
     display: block;
+    background-color: rgb(var(--color-background));
+    box-shadow: 0 2px 4px rgba(var(--color-body), 0.1);
+    transition: top .15s ease-out;
+  }
+
+  &.scrolled-past-header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgb(var(--color-background));
-    box-shadow: 0 2px 4px rgba(var(--color-body), 0.1);
-  }
-
-  &.animate {
-    transition: top .15s ease-out;
   }
 
   &.shopify-section-header-hidden {
@@ -547,7 +553,7 @@ details>* {
   --section-margin-top: 10rem;
   margin-block: 0;
 
-  & + .section {
+  &+.section {
     margin-block-start: var(--section-margin-top);
   }
 
@@ -597,15 +603,15 @@ details>* {
     flex-grow: 1;
   }
 
-  @media screen and (width >= 1025px) {    
+  @media screen and (width >=1025px) {
     &:where(.flex--fixed-col) {
       --flex-col-fixed: 100%;
-  
+
       &>.grid__item-fixed {
         width: var(--flex-col-fixed);
         max-width: var(--flex-col-fixed);
       }
-  
+
       &>.grid__item:not(.grid__item-fixed) {
         width: calc(100% - var(--flex-col-fixed) - var(--flex-col-gap));
         max-width: calc(100% - var(--flex-col-fixed) - var(--flex-col-gap));

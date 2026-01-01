@@ -236,15 +236,11 @@ class StickyHeader extends HTMLElement {
   onScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    console.log(scrollTop);
-    console.log(this.currentScrollTop);
-    console.log(this.headerBounds.bottom);
-
-    if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+    if (scrollTop > this.currentScrollTop && scrollTop > this.header.offsetHeight) {
       this.header.classList.add('scrolled-past-header');
       if (this.preventHide) return;
       requestAnimationFrame(this.hide.bind(this));
-    } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+    } else if (scrollTop < this.currentScrollTop && scrollTop > this.header.offsetHeight) {
       this.header.classList.add('scrolled-past-header');
       if (!this.preventReveal) {
         requestAnimationFrame(this.reveal.bind(this));
@@ -257,7 +253,7 @@ class StickyHeader extends HTMLElement {
 
         requestAnimationFrame(this.hide.bind(this));
       }
-    } else if (scrollTop <= this.headerBounds.top) {
+    } else if (scrollTop <= 0) {
       this.header.classList.remove('scrolled-past-header');
       requestAnimationFrame(this.reset.bind(this));
     }
