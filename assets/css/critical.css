@@ -458,11 +458,14 @@ details>* {
   & {
     display: block;
     position: sticky;
-    top: 0;
     z-index: 100;
     background-color: rgb(var(--color-background));
     box-shadow: 0 2px 4px rgba(var(--color-body), 0.1);
     transition: top .15s ease-out;
+  }
+
+  &.shopify-section-header-sticky {
+    top: 0;
   }
 
   &.shopify-section-header-hidden {

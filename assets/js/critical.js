@@ -214,7 +214,12 @@ class StickyHeader extends HTMLElement {
   }
 
   setHeaderHeight() {
-    document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
+    const rect = this.header.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    this.headerBounds.top = rect.top + scrollTop;
+    this.headerBounds.bottom = this.headerBounds.top + rect.height;
+    
+    document.documentElement.style.setProperty('--header-height', `${rect.height}px`);
   }
 
   disconnectedCallback() {
@@ -253,7 +258,7 @@ class StickyHeader extends HTMLElement {
 
         requestAnimationFrame(this.hide.bind(this));
       }
-    } else if (scrollTop <= 0) {
+    } else if (scrollTop <= this.headerBounds.top) {
       this.header.classList.remove('scrolled-past-header');
       requestAnimationFrame(this.reset.bind(this));
     }
