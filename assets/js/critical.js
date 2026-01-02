@@ -216,7 +216,7 @@ class StickyHeader extends HTMLElement {
   setHeaderHeight() {
     const rect = this.header.getBoundingClientRect();
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    this.headerBounds.top = rect.top + scrollTop;
+    this.headerBounds.top = 0;
     this.headerBounds.bottom = this.headerBounds.top + rect.height;
     
     document.documentElement.style.setProperty('--header-height', `${rect.height}px`);
