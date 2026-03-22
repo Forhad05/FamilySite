@@ -516,3 +516,99 @@
 }
 
 /* cta section - end */
+
+/* footer section - start */
+.section--footer {
+  --color-background: 59, 82, 136;
+  --color-heading: 255, 255, 255;
+  --color-body: 219, 219, 219;
+  --footer-top-space: 10rem;
+  --footer-gap-space: 5rem;
+  --footer-icon-size: 2.6rem;
+  --footer-icons-gap: 3rem;
+
+  color: rgb(var(--color-body));
+  background-color: rgb(var(--color-background));
+  margin-top: var(--footer-top-space);
+
+  .section--footer-box {
+    padding-block: var(--footer-gap-space);
+  }
+
+  .section--footer-top {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: auto minmax(max-content, auto);
+    justify-content: space-between;
+
+    .footer--cta-buttons:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  .section--footer-divider {
+    border-top: none;
+    border-style: dashed;
+    border-color: rgb(var(--color-body));
+    margin-block: var(--footer-gap-space);
+  }
+
+  .section--footer-body {
+    --flex-col-count: 4;
+    justify-content: space-between;
+  }
+
+  .section--footer-body .grid__item {
+    width: max-content;
+  }
+
+  .section--footer-bottom {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgb(var(--color-body));
+      z-index: -1;
+    }
+  }
+
+  .footer-bottom--box {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(var(--color-background));
+    padding-inline: 3rem;
+    gap: 1rem;
+  }
+
+  .footer-socials {
+    width: fit-content;
+    display: inline-flex;
+    gap: var(--footer-icons-gap);
+
+    .svg-wrapper {
+      --icon-svg-size: var(--footer-icon-size);
+      color: rgb(var(--color-body));
+    }
+  }
+
+  .footer-copyright {
+    font-size: 1.2rem;
+  }
+}
+
+/* footer section - end */
+
+/* faq section - start */
+/* .faq--section {} */
+
+/* faq section - end */

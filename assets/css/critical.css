@@ -40,6 +40,7 @@
   --color-link: 0, 0, 0;
   --color-link-active: 80, 114, 167;
   --color-overlay: 0, 0, 0;
+  --color-icon: 255, 255, 255;
 
   /* buttons */
   --color-button: 0, 0, 0;
@@ -370,6 +371,7 @@ details>* {
   }
 }
 
+small,
 .rte,
 .text-body {
   color: rgb(var(--color-body));
@@ -629,5 +631,68 @@ details>* {
 
   @media screen and (width < 1025px) {
     --flex-col-count: 1;
+  }
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+/* accordion item */
+.accordion-item {
+  --accordion-accordion: 2rem;
+  --accordion-radius: 0.5rem;
+  --accordion-summary-pad-x: 1.5rem;
+  --accordion-summary-active: 255, 255, 255;
+  --accordion-summary-bg-active: 80, 114, 167;
+  --accordion-content-border: 0, 0, 0;
+  --accordion-content-border-opacity: 1;
+
+  & + .accordion-item {
+    margin-top: var(--accordion-accordion);
+  }
+  
+  &>summary {
+    --icon-svg-size: 2rem;
+    list-style: none;
+    display: block;
+    cursor: pointer;
+    min-height: 5rem;
+    position: relative;
+    align-content: center;
+    padding-inline: var(--accordion-summary-pad-x) calc((var(--accordion-summary-pad-x)*2) + var(--icon-svg-size));
+    border: 0.1rem solid rgba(var(--accordion-content-border), var(--accordion-content-border-opacity));
+    border-radius: var(--accordion-radius);
+
+    .svg-wrapper {
+      position: absolute;
+      right: var(--accordion-summary-pad-x);
+      top: calc(50% - (var(--icon-svg-size) / 2));
+      transition: transform 350ms ease-in-out;
+    }
+  }
+
+  &>summary::-webkit-details-marker {
+    display: none;
+  }
+
+  &[open]>summary {
+    --accordion-content-border-opacity: 0;
+    color: rgb(var(--accordion-summary-active));
+    background-color: rgb(var(--accordion-summary-bg-active));
+  }
+  &:not([open])>summary .svg-wrapper {
+    color: rgb(var(--accordion-summary-bg-active));
+    transform: rotate(-180deg);
+  }
+
+  .accordion-content {
+    padding: 1rem 1.5rem;
+    border-left: 0.1rem solid rgba(var(--accordion-content-border), var(--accordion-content-border-opacity));
+    border-right: 0.1rem solid rgba(var(--accordion-content-border), var(--accordion-content-border-opacity));
+    border-bottom: 0.1rem solid rgba(var(--accordion-content-border), var(--accordion-content-border-opacity));
+    border-bottom-right-radius: var(--accordion-radius);
+    border-bottom-left-radius: var(--accordion-radius);
+    margin-top: calc(-1*var(--accordion-radius));
   }
 }
