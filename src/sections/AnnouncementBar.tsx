@@ -2,15 +2,17 @@ import '../assets/AnnouncementBar.css'
 
 export default function AnnouncementBar() {
   return (
-    <div className="topbar">
-      <div className="container">
-        <span className="topbar-message">
-          ↗ Free 30-minute consultation for new students ↗ Book today!
-        </span>
-        <a className="topbar-phone" href="tel:+61000000000">
-          📞 +61 000 000 000
-        </a>
+    <section>
+      <div className="topbar">
+        <div className="container">
+          <span className="topbar-message">
+            ↗ Free 30-minute consultation for new students ↗ Book today!
+          </span>
+          <a className="topbar-phone" href="tel:+61000000000">
+            📞 +61 000 000 000
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
