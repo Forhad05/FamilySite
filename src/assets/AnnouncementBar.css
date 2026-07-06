@@ -1,0 +1,29 @@
+.topbar {
+  background: var(--black);
+  color: var(--white);
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.topbar-message {
+  opacity: 0.85;
+}
+
+.topbar-phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--white);
+  color: var(--black);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
