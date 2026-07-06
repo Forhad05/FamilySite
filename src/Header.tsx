@@ -6,18 +6,18 @@ function Header() {
       <div className="topbar">
         <div className="container">
           <span className="topbar-message">
-            ↗ Limited time offer! Get 10% off on your first order ↗ Shop now!
+            ↗ Free 30-minute consultation for new students ↗ Book today!
           </span>
-          <a className="topbar-phone" href="tel:+10124567890">
-            📞 +1 012 456-7890
+          <a className="topbar-phone" href="tel:+61000000000">
+            📞 +61 000 000 000
           </a>
         </div>
       </div>
       <nav className="navbar">
         <div className="container">
           <div className="logo">
-            STEDO
-            <span>REPUTATION</span>
+            GLOBAL PATHWAYS
+            <span>EDUCATION CONSULTING</span>
           </div>
           <ul className="nav-links">
             <li>
@@ -26,22 +26,21 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#">Solutions</a>
+              <a href="#study-in-australia">Study in Australia</a>
             </li>
             <li>
-              <a href="#">Who We Serve</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#">Self-Help</a>
+              <a href="#about">About Sabina</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <div className="nav-icons">
             <button aria-label="Search">🔍</button>
-            <button aria-label="Account">👤</button>
-            <div className="nav-avatar">🧑</div>
+            <div className="nav-avatar">👩‍🏫</div>
           </div>
         </div>
       </nav>

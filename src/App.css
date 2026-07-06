@@ -98,6 +98,33 @@
   font-size: 88px;
 }
 
+.credential-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 20px 24px;
+  background: var(--blue-pale);
+  border-radius: 12px;
+  max-width: 480px;
+}
+
+.credential-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.credential-badge strong {
+  font-size: 15px;
+  color: var(--text-h);
+}
+
+.credential-badge p {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 4px;
+}
+
 .stat-banner {
   display: flex;
   align-items: stretch;
@@ -161,12 +188,17 @@
     justify-content: center;
   }
 
-  .stat-banner {
+  .stat-banner,
+  .credential-badge {
     flex-direction: column;
     text-align: center;
   }
 
   .stat-number {
     margin: 0 auto;
+  }
+
+  .credential-badge {
+    margin-inline: auto;
   }
 }

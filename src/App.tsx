@@ -1,15 +1,12 @@
 import './App.css'
 
-function StatBanner() {
+function StatBanner({ stat, text, source }: { stat: string; text: string; source: string }) {
   return (
     <div className="stat-banner">
-      <div className="stat-number">80%</div>
+      <div className="stat-number">{stat}</div>
       <div className="stat-text">
-        <p>
-          Over 80% of reputation damage risks come from a mismatch between
-          the buzz and the reality.
-        </p>
-        <strong>— Digimind</strong>
+        <p>{text}</p>
+        <strong>— {source}</strong>
       </div>
     </div>
   )
@@ -20,21 +17,21 @@ function CtaStrip() {
     <section className="cta-banner section-tint" style={{ background: '#4f74b5' }}>
       <div className="container">
         <div>
-          <h2 style={{ color: '#fff' }}>Need Assistance? Talk To An Expert.</h2>
+          <h2 style={{ color: '#fff' }}>Need Guidance? Talk To Sabina.</h2>
           <p style={{ color: 'rgba(255,255,255,0.85)' }}>
             Free, confidential, and without obligation.
           </p>
         </div>
         <div className="cta-actions">
           <a className="btn btn-outline" href="#contact">
-            Get Free Consultation →
+            Book Free Consultation →
           </a>
-          <span style={{ color: '#fff' }}>or Talk to an Expert</span>
-          <a className="btn btn-outline-light" href="tel:+10124567890">
-            📞 +1 012 456-7890
+          <span style={{ color: '#fff' }}>or call directly</span>
+          <a className="btn btn-outline-light" href="tel:+61000000000">
+            📞 +61 000 000 000
           </a>
         </div>
-        <div className="cta-emoji">📣</div>
+        <div className="cta-emoji">🎓</div>
       </div>
     </section>
   )
@@ -47,95 +44,96 @@ function App() {
         <div className="container">
           <div className="hero-copy">
             <h1>
-              Solutions As Unique As
-              <span className="accent">Your Reputation</span>
+              Your Trusted Guide To
+              <span className="accent">Studying in Australia</span>
             </h1>
             <p>
-              We've been serving a diverse range of people and businesses
-              worldwide for over a decade.
+              Personalised, QEAC-certified education counselling from
+              application to arrival — guided by Sabina Yasmin, Professor at
+              Sydney Imperial Institute.
             </p>
             <div className="hero-actions">
               <a className="btn btn-outline-light" href="#contact">
-                Get Free Consultation →
+                Book Free Consultation →
               </a>
-              <span>or Talk to an Expert</span>
-              <a className="btn btn-outline-light" href="tel:+10124567890">
-                📞 +1 012 456-7890
+              <span>or call directly</span>
+              <a className="btn btn-outline-light" href="tel:+61000000000">
+                📞 +61 000 000 000
               </a>
             </div>
           </div>
-          <div className="hero-art">💡</div>
+          <div className="hero-art">🎓</div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="about">
         <div className="container">
           <div className="section-row">
             <div className="section-copy">
-              <h2>Individuals &amp; Professionals</h2>
+              <h2>Meet Sabina Yasmin</h2>
               <p>
-                Stedo Reputation offers valuable services to help individuals
-                manage and influence the news and articles that appear in
-                their Google search results. This service is particularly
-                crucial since the first page of search results for your name
-                can essentially serve as your online curriculum vitae (CV).
-                It showcases your digital reputation to potential employers,
-                clients, and anyone who might be searching for you.
+                Sabina Yasmin is a Professor at Sydney Imperial Institute and
+                a Qualified Education Agent Counsellor (QEAC), certified by
+                ICEF Academy's Education Agent Training Course (EATC) on 20
+                October 2024 (Graduate No. #13556). She has spent years
+                guiding students through every stage of the journey to study
+                in Australia — from choosing the right course to settling in
+                after arrival.
               </p>
               <p>
-                By ensuring that the information presented on Page 1 is
-                accurate and positive, Stedo Reputation helps you put your
-                best digital foot forward. This not only enhances your
-                professional image but also maintains a favorable online
-                presence. With Stedo Reputation's expertise, you can
-                confidently manage your digital reputation, ensuring that
-                what people find online reflects the best version of you.
+                Her training and academic background mean students get
+                advice that is both credentialed and grounded in real
+                classroom experience — not just paperwork, but an honest
+                sense of what studying and living in Australia is actually
+                like.
               </p>
-              <a className="btn btn-primary" href="#learn-more">
-                Learn More
-              </a>
+              <div className="credential-badge">
+                <span className="credential-icon">🎖️</span>
+                <div>
+                  <strong>Qualified Education Agent Counsellor (QEAC)</strong>
+                  <p>ICEF Academy · Graduate No. #13556 · Issued 20 Oct 2024</p>
+                </div>
+              </div>
             </div>
             <div className="section-art">
-              <div className="illustration">🧑‍💻</div>
+              <div className="illustration">👩‍🏫</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section section-tint">
+      <section className="section section-tint" id="services">
         <div className="container">
           <div className="section-row reverse">
             <div className="section-copy">
-              <h2>Small Businesses</h2>
+              <h2>Undergraduate &amp; Foundation Pathways</h2>
               <p>
-                Stedo Reputation offers valuable services to help individuals
-                manage and influence the news and articles that appear in
-                their Google search results. This service is particularly
-                crucial since the first page of search results for your name
-                can essentially serve as your online curriculum vitae (CV).
-                It showcases your digital reputation to potential employers,
-                clients, and anyone who might be searching for you.
+                For high school graduates exploring their first step into
+                Australian higher education, we help map out foundation
+                programs, diplomas, and bachelor degrees suited to your
+                grades, budget, and career goals.
               </p>
               <p>
-                By ensuring that the information presented on Page 1 is
-                accurate and positive, Stedo Reputation helps you put your
-                best digital foot forward. This not only enhances your
-                professional image but also maintains a favorable online
-                presence. With Stedo Reputation's expertise, you can
-                confidently manage your digital reputation, ensuring that
-                what people find online reflects the best version of you.
+                From shortlisting universities to preparing a strong
+                application, we make sure every document — transcripts,
+                statements of purpose, English test scores — is ready before
+                a deadline ever becomes a problem.
               </p>
-              <a className="btn btn-primary" href="#learn-more">
+              <a className="btn btn-primary" href="#contact">
                 Learn More
               </a>
             </div>
             <div className="section-art">
-              <div className="illustration">🏢</div>
+              <div className="illustration">🎒</div>
             </div>
           </div>
 
           <div style={{ marginTop: '64px' }}>
-            <StatBanner />
+            <StatBanner
+              stat="700k+"
+              text="International students choose Australia every year, making it one of the world's top three study destinations."
+              source="Australian Government, Department of Education"
+            />
           </div>
         </div>
       </section>
@@ -146,36 +144,33 @@ function App() {
         <div className="container">
           <div className="section-row">
             <div className="section-copy">
-              <h2>Executives &amp; VIPs</h2>
+              <h2>Postgraduate &amp; Research Students</h2>
               <p>
-                Stedo Reputation offers valuable services to help individuals
-                manage and influence the news and articles that appear in
-                their Google search results. This service is particularly
-                crucial since the first page of search results for your name
-                can essentially serve as your online curriculum vitae (CV).
-                It showcases your digital reputation to potential employers,
-                clients, and anyone who might be searching for you.
+                Planning a Master's, MBA, or PhD? We help you identify
+                supervisors, research groups, and scholarship opportunities
+                that match your academic interests, and guide you through
+                university-specific application requirements.
               </p>
               <p>
-                By ensuring that the information presented on Page 1 is
-                accurate and positive, Stedo Reputation helps you put your
-                best digital foot forward. This not only enhances your
-                professional image but also maintains a favorable online
-                presence. With Stedo Reputation's expertise, you can
-                confidently manage your digital reputation, ensuring that
-                what people find online reflects the best version of you.
+                Sabina's own academic experience as a professor gives
+                candidates a rare, insider perspective on what admissions
+                committees are actually looking for.
               </p>
-              <a className="btn btn-primary" href="#learn-more">
+              <a className="btn btn-primary" href="#contact">
                 Learn More
               </a>
             </div>
             <div className="section-art">
-              <div className="illustration">🕴️</div>
+              <div className="illustration">🔬</div>
             </div>
           </div>
 
           <div style={{ marginTop: '64px' }}>
-            <StatBanner />
+            <StatBanner
+              stat="200+"
+              text="Students and families guided through university shortlisting, applications, and visa preparation to date."
+              source="Global Pathways Education Consulting"
+            />
           </div>
         </div>
       </section>
@@ -184,31 +179,47 @@ function App() {
         <div className="container">
           <div className="section-row reverse">
             <div className="section-copy">
-              <h2>Large Companies</h2>
+              <h2>Student Visa &amp; Migration Support</h2>
               <p>
-                Stedo Reputation offers valuable services to help individuals
-                manage and influence the news and articles that appear in
-                their Google search results. This service is particularly
-                crucial since the first page of search results for your name
-                can essentially serve as your online curriculum vitae (CV).
-                It showcases your digital reputation to potential employers,
-                clients, and anyone who might be searching for you.
+                Visa applications are where most study plans stall. We walk
+                you through the Subclass 500 student visa process — GTE
+                statements, financial evidence, health cover, and interview
+                preparation — so nothing is left to guesswork.
               </p>
               <p>
-                By ensuring that the information presented on Page 1 is
-                accurate and positive, Stedo Reputation helps you put your
-                best digital foot forward. This not only enhances your
-                professional image but also maintains a favorable online
-                presence. With Stedo Reputation's expertise, you can
-                confidently manage your digital reputation, ensuring that
-                what people find online reflects the best version of you.
+                We also advise on post-study work rights and long-term
+                pathways for students who plan to build a career in
+                Australia after graduation.
               </p>
-              <a className="btn btn-primary" href="#learn-more">
+              <a className="btn btn-primary" href="#contact">
                 Learn More
               </a>
             </div>
             <div className="section-art">
-              <div className="illustration">👥</div>
+              <div className="illustration">🛂</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-row">
+            <div className="section-copy">
+              <h2>Parents &amp; Families</h2>
+              <p>
+                Sending a child abroad is as much an emotional decision as a
+                practical one. We work directly with families to answer
+                questions about cost of living, safety, accommodation, and
+                staying connected — so the whole family feels confident
+                about the move, not just the student.
+              </p>
+              <a className="btn btn-primary" href="#contact">
+                Learn More
+              </a>
+            </div>
+            <div className="section-art">
+              <div className="illustration">👨‍👩‍👧</div>
             </div>
           </div>
         </div>
