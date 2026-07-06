@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import App from './App.tsx'
 
-function Content() {
+export default function ContentForLayout() {
   return (
     <main>
       <Routes>
@@ -10,5 +10,3 @@ function Content() {
     </main>
   )
 }
-
-export default Content

@@ -1,6 +1,6 @@
 import '../assets/Header.css'
 
-function Header() {
+export default function Header() {
   return (
     <section>
       <header>
@@ -39,5 +39,3 @@ function Header() {
     </section>
   )
 }
-
-export default Header

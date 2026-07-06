@@ -1,6 +1,6 @@
 import '../assets/Footer.css'
 
-function Footer() {
+export default function Footer() {
   return (
     <section>
       <footer>
@@ -64,5 +64,3 @@ function Footer() {
     </section>
   )
 }
-
-export default Footer
