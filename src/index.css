@@ -1,6 +1,10 @@
 @font-face {
   font-family: 'Inter';
-  src: url('./assets/Inter.ttf') format('truetype');
+  src:
+    local('Inter'),
+    url('./assets/Inter.woff2') format('woff2'),
+    url('./assets/Inter.woff') format('woff'),
+    url('./assets/Inter.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -8,7 +12,11 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('./assets/Inter-Italic.ttf') format('truetype');
+  src:
+    local('Inter Italic'),
+    url('./assets/Inter-Italic.woff2') format('woff2'),
+    url('./assets/Inter-Italic.woff') format('woff'),
+    url('./assets/Inter-Italic.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
