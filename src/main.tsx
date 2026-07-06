@@ -9,9 +9,11 @@ import FooterGroup from './FooterGroup.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename="/FamilySite/">
-      <HeaderGroup />
-      <ContentForLayout />
-      <FooterGroup />
+      <main className='template'>
+        <HeaderGroup />
+        <ContentForLayout />
+        <FooterGroup />
+      </main>
     </BrowserRouter>
   </StrictMode>,
 )

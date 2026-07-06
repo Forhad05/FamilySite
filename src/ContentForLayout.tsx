@@ -3,10 +3,10 @@ import App from './App.tsx'
 
 export default function ContentForLayout() {
   return (
-    <main>
+    <div className='main' id='content_for_layout'>
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>
-    </main>
+    </div>
   )
 }

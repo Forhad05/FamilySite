@@ -1,4 +1,5 @@
 import '../assets/Footer.css'
+import logoDark from '../assets/logo-full-dark.png'
 
 export default function Footer() {
   return (
@@ -9,8 +10,7 @@ export default function Footer() {
             <div className="footer-top">
               <div className="footer-brand">
                 <div className="logo">
-                  GLOBAL PATHWAYS
-                  <span>EDUCATION CONSULTING</span>
+                  <img src={logoDark} alt="Global Pathways Education Consulting" />
                 </div>
                 <p>
                   Independent, QEAC-certified education counselling helping
