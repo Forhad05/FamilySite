@@ -4,14 +4,14 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import HeaderGroup from './HeaderGroup.tsx'
 import Content from './Content.tsx'
-import Footer from './Footer.tsx'
+import FooterGroup from './FooterGroup.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename="/FamilySite/">
       <HeaderGroup />
       <Content />
-      <Footer />
+      <FooterGroup />
     </BrowserRouter>
   </StrictMode>,
 )
