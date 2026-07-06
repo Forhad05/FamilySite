@@ -3,7 +3,7 @@ import '../assets/CtaBanner.css'
 export default function CtaBanner() {
   return (
     <section className="cta-banner">
-      <div className="container">
+      <div className="page-width">
         <div>
           <h2>Ready To Start Your Australian Journey?</h2>
           <p>Free, confidential guidance — no obligation.</p>

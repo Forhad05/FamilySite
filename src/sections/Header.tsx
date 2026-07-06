@@ -5,7 +5,7 @@ function Header() {
     <section>
       <header>
         <nav className="navbar">
-          <div className="container">
+          <div className="page-width">
             <div className="logo">
               GLOBAL PATHWAYS
               <span>EDUCATION CONSULTING</span>

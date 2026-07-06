@@ -89,7 +89,7 @@ button {
   cursor: pointer;
 }
 
-.container {
+.page-width {
   width: 1140px;
   max-width: 100%;
   margin: 0 auto;

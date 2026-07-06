@@ -5,7 +5,7 @@ function Footer() {
     <section>
       <footer>
         <div className="site-footer">
-          <div className="container">
+          <div className="page-width">
             <div className="footer-top">
               <div className="footer-brand">
                 <div className="logo">

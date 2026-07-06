@@ -15,7 +15,7 @@ function StatBanner({ stat, text, source }: { stat: string; text: string; source
 function CtaStrip() {
   return (
     <section className="cta-banner section-tint" style={{ background: '#4f74b5' }}>
-      <div className="container">
+      <div className="page-width">
         <div>
           <h2 style={{ color: '#fff' }}>Need Guidance? Talk To Sabina.</h2>
           <p style={{ color: 'rgba(255,255,255,0.85)' }}>
@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       <section className="hero">
-        <div className="container">
+        <div className="page-width">
           <div className="hero-copy">
             <h1>
               Your Trusted Guide To
@@ -67,7 +67,7 @@ function App() {
       </section>
 
       <section className="section" id="about">
-        <div className="container">
+        <div className="page-width">
           <div className="section-row">
             <div className="section-copy">
               <h2>Meet Sabina Yasmin</h2>
@@ -103,7 +103,7 @@ function App() {
       </section>
 
       <section className="section section-tint" id="services">
-        <div className="container">
+        <div className="page-width">
           <div className="section-row reverse">
             <div className="section-copy">
               <h2>Undergraduate &amp; Foundation Pathways</h2>
@@ -141,7 +141,7 @@ function App() {
       <CtaStrip />
 
       <section className="section">
-        <div className="container">
+        <div className="page-width">
           <div className="section-row">
             <div className="section-copy">
               <h2>Postgraduate &amp; Research Students</h2>
@@ -176,7 +176,7 @@ function App() {
       </section>
 
       <section className="section section-tint">
-        <div className="container">
+        <div className="page-width">
           <div className="section-row reverse">
             <div className="section-copy">
               <h2>Student Visa &amp; Migration Support</h2>
@@ -203,7 +203,7 @@ function App() {
       </section>
 
       <section className="section">
-        <div className="container">
+        <div className="page-width">
           <div className="section-row">
             <div className="section-copy">
               <h2>Parents &amp; Families</h2>

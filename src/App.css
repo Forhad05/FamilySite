@@ -4,7 +4,7 @@
   padding: 72px 0;
 }
 
-.hero .container {
+.hero .page-width {
   display: flex;
   align-items: center;
   gap: 48px;
@@ -172,7 +172,7 @@
 }
 
 @media (max-width: 900px) {
-  .hero .container,
+  .hero .page-width,
   .section-row,
   .section-row.reverse {
     flex-direction: column;

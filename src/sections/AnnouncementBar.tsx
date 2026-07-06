@@ -4,7 +4,7 @@ export default function AnnouncementBar() {
   return (
     <section>
       <div className="topbar">
-        <div className="container">
+        <div className="page-width">
           <span className="topbar-message">
             ↗ Free 30-minute consultation for new students ↗ Book today!
           </span>
