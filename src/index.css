@@ -37,6 +37,12 @@
   --border: #e5e9f2;
 
   --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --page-width: 1500px;
+  --page-inline-pad: 15px;
+  @media screen and (width >= 750px) {
+    --page-inline-pad: 50px;
+    
+  }
 
   font: 16px/145% var(--sans);
   color-scheme: light;
@@ -114,10 +120,14 @@ button {
 }
 
 .page-width {
-  width: 1140px;
+  padding-inline: var(--page-inline-pad);
+  width: var(--page-width);
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 24px;
+}
+
+.page-width--full {
+  width: 100%;
 }
 
 .btn {
