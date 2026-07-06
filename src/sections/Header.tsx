@@ -1,40 +1,17 @@
 import '../assets/Header.css'
+import HeaderActions from '../components/HeaderActions'
+import HeaderMenu from '../components/HeaderMenu'
+import SiteLogo from '../components/SiteLogo'
 
 export default function Header() {
   return (
-    <section>
-      <header>
-        <nav className="navbar">
-          <div className="page-width">
-            <div className="logo">
-              GLOBAL PATHWAYS
-              <span>EDUCATION CONSULTING</span>
-            </div>
-            <ul className="nav-links">
-              <li>
-                <a href="#" className="active">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#study-in-australia">Study in Australia</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#about">About Sabina</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-            <div className="nav-icons">
-              <button aria-label="Search">🔍</button>
-              <div className="nav-avatar">👩‍🏫</div>
-            </div>
-          </div>
-        </nav>
+    <section className='section-header' id='SectionHeader'>
+      <header className='header-wrapper page-width'>
+        <div className="header-grid">
+          <SiteLogo />
+          <HeaderMenu />
+          <HeaderActions />
+        </div>
       </header>
     </section>
   )
