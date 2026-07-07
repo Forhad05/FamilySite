@@ -1,0 +1,42 @@
+{
+  "heading": "Services",
+  "intro": "Sabina personally leads every application — supported by a small family team handling communication and post-arrival help, not a rotating cast of junior staff.",
+  "sections": [
+    {
+      "id": "primary-assessment",
+      "heading": "Primary Assessment",
+      "whyItMatters": "Applying to the wrong program wastes time, money, and application fees. A clear-eyed assessment upfront prevents that.",
+      "ourApproach": "Sabina offers a free, direct evaluation of each student's academic record, financial position, and English proficiency, and gives honest feedback on which Australian universities and courses are realistic — not just which ones sound impressive."
+    },
+    {
+      "id": "application-processing",
+      "heading": "Application Processing",
+      "whyItMatters": "A single missing document or missed deadline can cost a student an entire intake.",
+      "ourApproach": "We manage the full application from start to finish — form accuracy, supporting documents, statement of purpose review, and tracking every university's response — so students always know exactly where their application stands."
+    },
+    {
+      "id": "documentation",
+      "heading": "Documentation",
+      "whyItMatters": "Universities and the Department of Home Affairs both require specific, correctly formatted documentation. Errors here are one of the most common causes of delays and rejections.",
+      "ourApproach": "Sabina reviews academic records, financial proof, and Confirmation of Enrolment (CoE) paperwork line by line, drawing on her own experience navigating Australian institutions and immigration requirements as both a professor and a former applicant herself."
+    },
+    {
+      "id": "visa-application-interview",
+      "heading": "Visa Application & Interview",
+      "whyItMatters": "The student visa (Subclass 500) process evaluates genuine intention, financial capacity, and course fit — not just paperwork completeness.",
+      "ourApproach": "We prepare students for the Genuine Temporary Entrant (GTE) requirement, review financial evidence, and run through likely interview questions so students walk in confident rather than anxious."
+    },
+    {
+      "id": "communication-support",
+      "heading": "Messaging & Communication Support",
+      "whyItMatters": "Students and families often have quick questions that shouldn't have to wait for a formal consultation slot.",
+      "ourApproach": "A dedicated team member handles day-to-day messages, calls, and emails, keeping students updated and routing anything that needs Sabina's direct attention to her promptly."
+    },
+    {
+      "id": "post-arrival-support",
+      "heading": "Post-Arrival Support",
+      "whyItMatters": "The transition doesn't end at visa approval — settling into a new country, city, and institution brings its own challenges.",
+      "ourApproach": "Because our team has a genuine, permanent presence in Sydney, we can offer students in-person guidance after arrival: practical orientation, pointing students toward accommodation and support services, and staying reachable as a familiar contact in a new country."
+    }
+  ]
+}

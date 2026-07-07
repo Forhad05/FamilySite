@@ -1,0 +1,37 @@
+{
+  "purpose": "Original website content for Global Educational Pathways — the family-run, Australia-focused education-counselling brand founded by Sabina Yasmin.",
+  "createdOn": "2026-07-08",
+  "lastRebranded": "2026-07-08",
+  "note": "Unlike /scraped/ (raw reference content pulled from a competitor site for structural inspiration), everything in this folder is written specifically for this brand — real credentials, real story, real business model. Facts pulled from public/generic sources (AQF levels, visa fee brackets, intake windows) were cross-checked and rewritten in-voice; nothing here is copied verbatim from /scraped/. Content was originally written centered on Sabina personally, then rebranded to lead with 'Global Educational Pathways' as the agency name once the family-team structure was confirmed — Sabina remains the credentialed founder and lead counsellor throughout.",
+  "brand": {
+    "name": "Global Educational Pathways",
+    "founder": {
+      "name": "Sabina Yasmin",
+      "credential": "Qualified Education Agent Counsellor (QEAC)",
+      "issuedBy": "ICEF Academy — Education Agent Training Course (EATC)",
+      "graduateNo": "#13556",
+      "issuedOn": "2024-10-20",
+      "role": "Founder & Lead Counsellor; Professor, Sydney Imperial Institute",
+      "sourceDocument": "src/assets/QEAC.pdf"
+    },
+    "team": "See team.json — small family team spanning Bangladesh (operations, website management, student communications) and Sydney, Australia (founder + marketing)."
+  },
+  "flaggedForConfirmation": [
+    "Real name for the Marketing (Australia) team member in team.json — currently a dummy placeholder pending the actual name from Mahafuzul.",
+    "Real office address(es) and phone/email for both Bangladesh and Sydney — contact-us.json currently uses placeholders consistent with the existing site scaffold (App.tsx uses +61 000 000 000).",
+    "Actual partner universities/colleges the agency is accredited to represent — universities.json is left as a structural placeholder, not a real list, since fabricating institution names/logos would misrepresent actual partnerships.",
+    "Exact tuition/visa-fee figures in study-in-australia.json are general public figures (subject to change) and should be reviewed before publishing.",
+    "Any specific incentive/commission language should be reviewed before publishing — the site copy intentionally avoids naming commission amounts and only states that students are never charged.",
+    "Whether 'Global Educational Pathways' is confirmed as final and not already in use/trademarked by another business — worth a quick check before committing to it site-wide."
+  ],
+  "files": [
+    { "file": "about.json", "description": "Brand + founder story: Sabina's path from head animal doctor in Kushtia and agriculture life with her husband, to self-funded QEAC certification and professorship in Sydney, framed as the origin of Global Educational Pathways" },
+    { "file": "team.json", "description": "Family team behind the brand: founder/lead counsellor, operations & website management, student communications support, and Sydney-based marketing" },
+    { "file": "home.json", "description": "Homepage content: hero, why choose us, services overview, study-abroad checklist, FAQs" },
+    { "file": "services.json", "description": "Service detail sections: primary assessment, application processing, documentation, visa & interview, communication support, post-arrival support" },
+    { "file": "study-in-australia.json", "description": "Australia-focused destination page: program durations, cost ranges, intakes, OSHC, visa fees, deadlines" },
+    { "file": "universities.json", "description": "Placeholder structure for the list of Australian universities/colleges the agency can represent students to — needs real data" },
+    { "file": "faqs.json", "description": "Standalone FAQ set, including the free-for-students / incentive-based model and 'who will I actually talk to'" },
+    { "file": "contact-us.json", "description": "Contact details for both the Sydney and Bangladesh sides of the team — currently placeholders pending real office/phone/email" }
+  ]
+}

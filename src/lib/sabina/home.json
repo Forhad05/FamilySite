@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "heading": "Your Trusted Guide To Studying in Australia",
+    "subheading": "Global Educational Pathways — personal, QEAC-certified education counselling",
+    "paragraph": "A small, family-run consultancy, not a call centre. Founder Sabina Yasmin personally guides every student from choosing the right course through to visa approval and settling in.",
+    "ctas": [
+      { "label": "Book a Free Consultation", "url": "#contact" },
+      { "label": "Meet Our Team", "url": "#about" }
+    ]
+  },
+  "whyChooseUs": {
+    "heading": "Why Study Abroad Applicants Choose Global Educational Pathways",
+    "paragraph": "Global Educational Pathways is led by Sabina Yasmin, a Qualified Education Agent Counsellor (QEAC) certified by ICEF Academy and a working professor at Sydney Imperial Institute. She has lived the exact journey her students are about to take — arriving in Australia, rebuilding a career from scratch, and learning the system from the inside. Backed by a small family team spanning Bangladesh and Sydney, every student gets direct, personal attention — never a rotating cast of junior staff."
+  },
+  "services": {
+    "heading": "How We Help",
+    "paragraph": "Support at every stage of the journey to study in Australia.",
+    "items": [
+      {
+        "title": "Primary Assessment",
+        "paragraph": "A free, honest evaluation of your academic background, finances, and English proficiency to find Australian programs you're genuinely eligible for.",
+        "url": "#services"
+      },
+      {
+        "title": "Application Processing",
+        "paragraph": "Hands-on help preparing and submitting university applications, statements of purpose, and tracking every response.",
+        "url": "#services"
+      },
+      {
+        "title": "Documentation",
+        "paragraph": "Guidance on academic records, financial proof, and Confirmation of Enrolment (CoE) documents so nothing holds up your file.",
+        "url": "#services"
+      },
+      {
+        "title": "Visa Application & Interview",
+        "paragraph": "Preparation for the Subclass 500 student visa, including GTE statements, financial evidence, and interview readiness.",
+        "url": "#services"
+      },
+      {
+        "title": "Post-Arrival Support",
+        "paragraph": "With a genuinely Sydney-based team, we can offer in-person help after you land — not just remote advice.",
+        "url": "#services"
+      }
+    ]
+  },
+  "studyAbroadChecklist": {
+    "heading": "Study Abroad Checklist",
+    "items": [
+      "Free Assessment: Get your academic, financial, and language profile assessed before you commit to a plan.",
+      "University Shortlist: Decide your preferred field of study and shortlist Australian universities/colleges that fit.",
+      "Document Collection: Gather transcripts, certificates, financial records, and identification.",
+      "English Proficiency: Prepare for and sit IELTS, PTE, or another accepted English test.",
+      "Application Deadlines: Apply at least 6 months ahead of your target intake — earlier for specialised courses.",
+      "University Application: Submit a complete, accurate application with all supporting documents.",
+      "Confirmation of Enrolment (CoE): Secure your CoE once accepted, ready to support your visa application.",
+      "Visa Application: Lodge your student visa application with financial and GTE documentation in order.",
+      "Pre-Departure Preparation: Arrange travel, accommodation, and health cover ahead of arrival.",
+      "Arrival in Australia: Land with a plan — and, where needed, in-person support already in place."
+    ]
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Do students have to pay Global Educational Pathways for its services?",
+        "answer": "No. We do not charge students or families any fee. Our service is funded through incentives paid by partner universities and colleges when a student successfully enrols — the same way most licensed education agents operate. Our recommendations are not influenced by which institution pays more; the goal is matching each student to the right fit."
+      },
+      {
+        "question": "What makes Global Educational Pathways different from a large consultancy?",
+        "answer": "We're a small, family-run team, not a rotating cast of junior counsellors. Our founder is a certified QEAC and a working academic in Australia, and every student is supported by people who are personally invested in the outcome — from first assessment through to arrival."
+      },
+      {
+        "question": "Which countries do you help students apply to?",
+        "answer": "Australia only. Specialising in a single destination lets us stay deeply current on Australian visa rules, university requirements, and living conditions, rather than spreading our expertise thin across many countries."
+      },
+      {
+        "question": "Can you help with English proficiency test preparation?",
+        "answer": "We can advise on which test (IELTS, PTE, etc.) fits your target course and refer you to trusted preparation resources, though test coaching itself is not our core service."
+      },
+      {
+        "question": "Where is Global Educational Pathways based?",
+        "answer": "We operate across Bangladesh and Sydney, Australia. Our founder is a professor at Sydney Imperial Institute and part of our team lives permanently in Sydney, meaning we can offer in-person support after students arrive — not just remote guidance."
+      }
+    ]
+  }
+}

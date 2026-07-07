@@ -1,0 +1,77 @@
+{
+  "heading": "Study in Australia",
+  "tagline": "Programs, costs, intakes, and what to prepare — explained plainly.",
+  "note": "Figures below are general public estimates (2024/2025 range) meant to set expectations, not quotes. They change over time and by institution — Sabina confirms exact numbers per student during assessment.",
+  "programAndDuration": {
+    "heading": "Program Types & Duration",
+    "paragraph": "Australian tertiary education is split into Vocational Education & Training (VET) and Higher Education (HE), ranked Level 1–10 on the Australian Qualifications Framework (AQF).",
+    "table": {
+      "columns": ["Qualification", "AQF Level", "Typical Duration"],
+      "rows": [
+        ["English for Academic Purposes", "Non-Award", "10–20 weeks"],
+        ["Certificate IV", "4", "1–1.5 years"],
+        ["Diploma", "5", "1–2 years"],
+        ["Advanced Diploma", "6", "2 years"],
+        ["Bachelor Degree", "7", "3 years"],
+        ["Bachelor with Honours", "8", "4 years"],
+        ["Graduate Diploma / Certificate", "8", "6 months–2 years"],
+        ["Master's Degree", "9", "2–3 years"],
+        ["PhD", "10", "3–5 years"]
+      ]
+    }
+  },
+  "costEstimates": {
+    "heading": "Indicative Tuition & Living Costs",
+    "tuitionTable": {
+      "columns": ["Qualification", "Estimated Annual Tuition"],
+      "rows": [
+        ["English for Academic Purposes", "$250–$500 per week"],
+        ["Certificate/Diploma/Advanced Diploma", "$15,000–$26,000"],
+        ["Bachelor Degree", "$15,000–$35,000"],
+        ["Graduate Diploma / Certificate", "$16,000–$20,000"],
+        ["Master's Degree", "$22,000–$36,000"],
+        ["PhD", "$20,000–$40,000"]
+      ]
+    },
+    "livingExpenseTable": {
+      "heading": "1st-Year Living Cost Estimate (Department of Home Affairs guideline)",
+      "columns": ["Applicant", "Estimated Annual Cost"],
+      "rows": [
+        ["Primary Applicant", "A$29,710"],
+        ["Spouse", "A$10,394"],
+        ["Dependent Child", "A$4,449"],
+        ["Dependent Child — School Costs", "A$13,502 / year"]
+      ]
+    }
+  },
+  "intakes": {
+    "heading": "Intakes",
+    "paragraph": "Most Australian universities offer two main intakes each year:",
+    "items": ["February/March (Spring session)", "July/August (Autumn session)"],
+    "note": "A few universities also run a smaller intake around October/November, and some use a trimester system (February, June, September) instead."
+  },
+  "oshc": {
+    "heading": "Overseas Student Health Cover (OSHC)",
+    "paragraph": "Every student visa holder is required to have OSHC for the duration of their stay. Sabina helps students understand which cover level and provider suits their circumstances."
+  },
+  "visaFeeEstimate": {
+    "heading": "Student Visa (Subclass 500) Fee Estimate",
+    "table": {
+      "columns": ["Applicant", "Approx. Fee"],
+      "rows": [
+        ["Primary Applicant", "A$1,600"],
+        ["Spouse", "A$1,190"],
+        ["Dependent Child", "A$390"]
+      ]
+    },
+    "note": "A card-payment surcharge of roughly 1.4% typically applies on top of these base fees."
+  },
+  "deadlines": {
+    "heading": "Application Timing",
+    "paragraph": "University and visa processing together can take months. Sabina recommends starting the process at least 6 months before your target intake — up to 8 months for competitive or specialised courses."
+  },
+  "popularFields": {
+    "heading": "Popular Fields of Study",
+    "items": ["Information Technology", "Engineering", "Business & Analytics", "Education", "Nursing & Health Sciences", "Agriculture & Veterinary Science"]
+  }
+}

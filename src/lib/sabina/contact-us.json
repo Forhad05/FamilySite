@@ -1,0 +1,26 @@
+{
+  "heading": "Contact Global Educational Pathways",
+  "note": "PLACEHOLDER — matches the placeholder phone number already used in App.tsx (+61 000 000 000). Replace with real office address, phone, and email before publishing.",
+  "paragraph": "General enquiries, messages, and emails are handled day-to-day by our Bangladesh-based support team, with Sabina personally involved in every assessment and application decision.",
+  "offices": [
+    {
+      "city": "Sydney",
+      "country": "Australia",
+      "address": "TODO: real address",
+      "phone": "+61 000 000 000",
+      "email": "TODO: real email",
+      "note": "Founder & post-arrival student support"
+    },
+    {
+      "city": "TODO: city (Bangladesh)",
+      "country": "Bangladesh",
+      "address": "TODO: real address",
+      "phone": "TODO: real phone",
+      "email": "TODO: real email",
+      "note": "Day-to-day messaging, calls, and student support"
+    }
+  ],
+  "contactForm": {
+    "fields": ["Your Full Name", "Your Email", "Phone Number", "What would you like help with?"]
+  }
+}

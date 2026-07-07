@@ -1,0 +1,39 @@
+{
+  "heading": "Our Team",
+  "paragraph": "Global Educational Pathways is family-run, deliberately kept small so every student is a real relationship rather than a file number.",
+  "note": "Real names filled in except marketing (Australia) — that one is a placeholder dummy name pending the actual name from Mahafuzul, flagged in index.json.",
+  "members": [
+    {
+      "name": "Sabina Yasmin",
+      "role": "Founder & Lead Counsellor",
+      "credential": "Qualified Education Agent Counsellor (QEAC), ICEF Academy",
+      "location": "Sydney, Australia",
+      "bio": "Sabina leads every student's assessment and application strategy personally, drawing on her QEAC certification and her own experience rebuilding a career after migrating to Australia."
+    },
+    {
+      "name": "Mahafuzul Haque",
+      "role": "Operations & Website Management",
+      "location": "Bangladesh",
+      "education": "SSC (Science, Main Math) and HSC (Science, Main Higher Math); currently studying for a Bachelor's in Statistics.",
+      "background": "5+ years as a Shopify developer (themes & sections).",
+      "bio": "Manages and maintains the Global Educational Pathways website and day-to-day operations, working directly with Sabina to keep information, processes, and student records up to date. His background in statistics and years of hands-on Shopify development mean the site itself is built and maintained by someone who actually understands both data and web development, not outsourced blind."
+    },
+    {
+      "name": "Mazedul Haque",
+      "role": "Student Support & Communications",
+      "location": "Bangladesh",
+      "education": "SSC (Arts); currently studying HSC (Vocational, BM Shakha, Main E-Business).",
+      "bio": "First point of contact for prospective students and families — handling incoming messages, emails, and initial queries, and routing students to the right next step. Currently studying E-Business at the HSC level, and learning the ropes of education consultancy under close guidance as part of that growth."
+    },
+    {
+      "name": "Placeholder Name (dummy — TODO: replace)",
+      "role": "Marketing (Australia)",
+      "location": "Sydney, Australia",
+      "bio": "Based in Sydney, helps grow awareness of Global Educational Pathways within the Bangladeshi community in Australia and supports outreach from the Australian side of the business."
+    }
+  ],
+  "extendedFamilyNote": {
+    "heading": "A Sydney Family Behind the Scenes",
+    "paragraph": "Sabina's husband completed his PhD in Australia and has since settled permanently in Sydney with his own home — giving Global Educational Pathways a genuinely established, long-term presence in the city, not just a temporary office."
+  }
+}
