@@ -26,3 +26,4 @@ dist-ssr
 .mcp.json
 .playwright-mcp
 src/lib/scraped
+.env
