@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom'
 import '../assets/Footer.css'
-import logoDark from '../assets/logo-full-dark.png'
+import logo from '../assets/logo-full.png'
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
             <div className="footer-top">
               <div className="footer-brand">
                 <div className="logo">
-                  <img src={logoDark} alt="Global Pathways Education Consulting" />
+                  <img src={logo} alt="Global Pathways Education Consulting" />
                 </div>
                 <p>
                   Independent, QEAC-certified education counselling helping
@@ -21,31 +22,30 @@ export default function Footer() {
               <div className="footer-col">
                 <h4>Services</h4>
                 <ul>
-                  <li><a href="#services">University Selection</a></li>
-                  <li><a href="#services">Application Support</a></li>
-                  <li><a href="#services">Student Visa Guidance</a></li>
-                  <li><a href="#services">Scholarship Advice</a></li>
-                  <li><a href="#services">Pre-Departure Briefing</a></li>
+                  <li><Link to="/services">University Selection</Link></li>
+                  <li><Link to="/services">Application Support</Link></li>
+                  <li><Link to="/services">Student Visa Guidance</Link></li>
+                  <li><Link to="/universities">Universities & Colleges</Link></li>
+                  <li><Link to="/team">Meet the Team</Link></li>
                 </ul>
               </div>
               <div className="footer-col">
                 <h4>Resources</h4>
                 <ul>
-                  <li><a href="#">Study in Australia Guide</a></li>
-                  <li><a href="#">English Test Requirements</a></li>
-                  <li><a href="#">Cost of Living Estimator</a></li>
-                  <li><a href="#">Visa Checklist</a></li>
-                  <li><a href="#">FAQs</a></li>
+                  <li><Link to="/study-in-australia">Study in Australia Guide</Link></li>
+                  <li><Link to="/study-in-australia">Costs & Intakes</Link></li>
+                  <li><Link to="/study-in-australia">Visa Fee Estimates</Link></li>
+                  <li><Link to="/#checklist">Visa Checklist</Link></li>
+                  <li><Link to="/#faqs">FAQs</Link></li>
                 </ul>
               </div>
               <div className="footer-col">
                 <h4>About</h4>
                 <ul>
-                  <li><a href="#about">Meet Sabina Yasmin</a></li>
-                  <li><a href="#about">QEAC Certification</a></li>
-                  <li><a href="#">Sydney Imperial Institute</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><Link to="/about">Meet Sabina Yasmin</Link></li>
+                  <li><Link to="/about">QEAC Certification</Link></li>
+                  <li><Link to="/team">Our Family Team</Link></li>
+                  <li><Link to="/contact">Contact</Link></li>
                 </ul>
               </div>
             </div>

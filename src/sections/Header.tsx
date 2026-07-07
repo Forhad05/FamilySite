@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState, type RefObject } from 'react'
+import { NavLink } from 'react-router-dom'
 import '../assets/Header.css'
 import logo from '../assets/logo-full.png'
 import { IconClose, IconFacebook, IconHamburger, IconWhatsapp } from '../lib/Icons'
@@ -12,11 +13,13 @@ function SiteLogo({ innerRef }: { innerRef: RefObject<HTMLDivElement | null> }) 
 }
 
 const NavLinks = [
-  { label: "Home", url: '#', active: true },
-  { label: "Study in Australia", url: '#study-in-australia', active: false },
-  { label: "Services", url: '#services', active: false },
-  { label: "About Sabina", url: '#about', active: false },
-  { label: "Contact", url: '#contact', active: false }
+  { label: "Home", url: '/', end: true },
+  { label: "Study in Australia", url: '/study-in-australia' },
+  { label: "Services", url: '/services' },
+  { label: "Universities", url: '/universities' },
+  { label: "About Sabina", url: '/about' },
+  { label: "Team", url: '/team' },
+  { label: "Contact", url: '/contact' },
 ]
 
 function HeaderMenu() {
@@ -25,7 +28,13 @@ function HeaderMenu() {
       <ul className="list-unstyled nav-links">
         {NavLinks.map((link) => (
           <li key={link.url}>
-            <a href={link.url} className={`nav-link--item ${link.active ? 'active' : ''}`.trim()}>{link.label}</a>
+            <NavLink
+              to={link.url}
+              end={link.end}
+              className={({ isActive }) => `nav-link--item ${isActive ? 'active' : ''}`.trim()}
+            >
+              {link.label}
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -75,13 +84,14 @@ function HeaderDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
           <ul className='list-unstyled header-drawer--links'>
             {NavLinks.map((link) => (
               <li key={link.url}>
-                <a
-                  href={link.url}
-                  className={`header-drawer--link ${link.active ? 'active' : ''}`.trim()}
+                <NavLink
+                  to={link.url}
+                  end={link.end}
+                  className={({ isActive }) => `header-drawer--link ${isActive ? 'active' : ''}`.trim()}
                   onClick={onClose}
                 >
                   {link.label}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>

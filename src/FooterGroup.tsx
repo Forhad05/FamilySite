@@ -1,10 +1,10 @@
-import CtaBanner from "./sections/CtaBanner";
+import CtaStrip from "./sections/CtaStrip";
 import Footer from "./sections/Footer";
 
 export default function FooterGroup() {
   return (
     <>
-      <CtaBanner/>
+      <CtaStrip />
       <Footer />
     </>
   )
