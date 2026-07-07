@@ -27,3 +27,4 @@ dist-ssr
 .playwright-mcp
 src/lib/scraped
 .env
+CLAUDE.md
