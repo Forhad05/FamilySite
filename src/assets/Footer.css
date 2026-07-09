@@ -68,12 +68,34 @@ site-footer {
 
 .social-icons {
   display: flex;
-  gap: 14px;
-  font-size: 16px;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+  transition: background 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+  background: var(--blue-mid);
+  color: var(--white);
 }
 
 @media (max-width: 900px) {
   .footer-top {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-top {
+    grid-template-columns: 1fr;
   }
 }

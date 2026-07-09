@@ -1,5 +1,6 @@
 import '../App.css'
 import universities from '../lib/sabina/universities.json'
+import emptyStateImg from '../lib/figma-exports/search-results--clip-path-group.png'
 
 export default function UniversitiesPage() {
   return (
@@ -15,7 +16,9 @@ export default function UniversitiesPage() {
         <div className="page-width">
           {universities.items.length === 0 ? (
             <div className="empty-state">
-              <div className="empty-state-icon">🎓</div>
+              <div className="empty-state-image">
+                <img src={emptyStateImg} alt="" />
+              </div>
               <p>
                 Sabina reviews each student's goals individually and recommends the
                 institutions that are genuinely the right fit — the full partner list

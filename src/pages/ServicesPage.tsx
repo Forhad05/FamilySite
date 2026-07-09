@@ -1,5 +1,6 @@
 import '../App.css'
 import services from '../lib/sabina/services.json'
+import waveArt from '../lib/figma-exports/who-we-serve--clip-path-group.png'
 
 export default function ServicesPage() {
   return (
@@ -11,7 +12,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--decorated">
+        <img className="section-decoration" src={waveArt} alt="" />
         <div className="page-width">
           {services.sections.map((item, index) => (
             <div className="numbered-row" key={item.id}>

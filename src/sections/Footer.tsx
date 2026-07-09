@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../assets/Footer.css'
 import logo from '../assets/logo-full.png'
+import { IconFacebook, IconInstagram, IconLinkedIn, IconMail } from '../lib/Icons'
 
 export default function Footer() {
   return (
@@ -52,10 +53,18 @@ export default function Footer() {
             <div className="footer-bottom">
               <span>© Copyright Global Pathways Education Consulting 2025</span>
               <div className="social-icons">
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="LinkedIn">💼</a>
-                <a href="#" aria-label="Email">✉️</a>
+                <a href="https://www.facebook.com/profile.php?id=61555824028180" target="_blank" aria-label="Facebook">
+                  <IconFacebook width={16} height={16} />
+                </a>
+                <a href="#" aria-label="Instagram">
+                  <IconInstagram width={16} height={16} />
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <IconLinkedIn width={16} height={16} />
+                </a>
+                <Link to="/contact" aria-label="Email">
+                  <IconMail width={16} height={16} />
+                </Link>
               </div>
             </div>
           </div>

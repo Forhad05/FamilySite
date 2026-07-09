@@ -4,8 +4,8 @@
     "subheading": "Global Educational Pathways — personal, QEAC-certified education counselling",
     "paragraph": "A small, family-run consultancy, not a call centre. Founder Sabina Yasmin personally guides every student from choosing the right course through to visa approval and settling in.",
     "ctas": [
-      { "label": "Book a Free Consultation", "url": "#contact" },
-      { "label": "Meet Our Team", "url": "#about" }
+      { "label": "Book a Free Consultation", "url": "/contact" },
+      { "label": "Meet Our Team", "url": "/team" }
     ]
   },
   "whyChooseUs": {

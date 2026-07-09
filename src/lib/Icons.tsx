@@ -97,3 +97,9 @@ export const IconClose = ({ width = defaultIconProps.width, height = defaultIcon
     </g>
   </svg>
 );
+
+export const IconMail = ({ width = defaultIconProps.width, height = defaultIconProps.height, iconClass = defaultIconProps.iconClass }: IconTypes) => (
+  <svg width={width} height={height} className={`icon icon-mail ${iconClass}`.trim()} style={{ display: "block" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+    <path fill="currentColor" fillRule="evenodd" d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2.4-.2 7.6 6.2 7.6-6.2H4.4zM20 7.6l-7.375 6.02a1 1 0 0 1-1.25 0L4 7.6V18h16V7.6z" clipRule="evenodd"></path>
+  </svg>
+);

@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom'
 import './App.css'
 import home from './lib/sabina/home.json'
 import about from './lib/sabina/about.json'
+import heroBg from './lib/figma-exports/home-page--mask-group.png'
+import aboutIllustration from './lib/figma-exports/personal-branding--clip-path-group.png'
 
 function App() {
   return (
     <>
       <section className="hero">
+        <img className="hero-bg" src={heroBg} alt="" />
         <div className="page-width">
           <div className="hero-copy">
             <h1>
@@ -17,13 +21,12 @@ function App() {
             <p>{home.hero.paragraph}</p>
             <div className="hero-actions">
               {home.hero.ctas.map((cta) => (
-                <a key={cta.label} className="btn btn-outline-light" href={cta.url}>
+                <Link key={cta.label} className="btn btn-outline-light" to={cta.url}>
                   {cta.label} →
-                </a>
+                </Link>
               ))}
             </div>
           </div>
-          <div className="hero-art">🎓</div>
         </div>
       </section>
 
@@ -48,7 +51,9 @@ function App() {
               </div>
             </div>
             <div className="section-art">
-              <div className="illustration">👩‍🏫</div>
+              <div className="illustration">
+                <img src={aboutIllustration} alt="Sabina Yasmin working through a student's study plan" />
+              </div>
             </div>
           </div>
         </div>
