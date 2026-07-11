@@ -4,8 +4,14 @@ import home from './lib/sabina/home.json'
 import about from './lib/sabina/about.json'
 import heroBg from './lib/figma-exports/home-page--mask-group.png'
 import aboutIllustration from './lib/figma-exports/personal-branding--clip-path-group.png'
+import { usePageMeta } from './hooks/usePageMeta'
 
 function App() {
+  usePageMeta(
+    'Study Abroad Consultants',
+    'Global Educational Pathways guides students end-to-end through studying in Australia — university selection, applications, visas, and post-arrival support, led personally by Sabina Yasmin.',
+  )
+
   return (
     <>
       <section className="hero">

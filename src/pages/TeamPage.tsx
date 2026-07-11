@@ -1,6 +1,7 @@
 import '../App.css'
 import team from '../lib/sabina/team.json'
 import heroImg from '../lib/figma-exports/vip-service--mask-group.png'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const isPlaceholder = (value: string) => /placeholder|TODO/i.test(value)
 
@@ -10,6 +11,11 @@ function getInitials(text: string) {
 }
 
 export default function TeamPage() {
+  usePageMeta(
+    'Our Team',
+    'Global Educational Pathways is family-run, deliberately kept small so every student is a real relationship rather than a file number.',
+  )
+
   return (
     <>
       <section className="page-hero">

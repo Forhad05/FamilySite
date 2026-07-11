@@ -3,6 +3,7 @@ import about from '../lib/sabina/about.json'
 import startingOverImg from '../lib/figma-exports/solutions--mask-group.png'
 import qeacImg from '../lib/figma-exports/personal-branding--clip-path-group.png'
 import teamImg from '../lib/figma-exports/vip-service--mask-group.png'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const founderStoryArt: Record<number, { src: string; alt: string }> = {
   1: { src: startingOverImg, alt: 'Studying and requalifying to rebuild a career in Australia' },
@@ -11,6 +12,11 @@ const founderStoryArt: Record<number, { src: string; alt: string }> = {
 }
 
 export default function AboutPage() {
+  usePageMeta(
+    'About Sabina Yasmin',
+    "A family-run consultancy founded on one woman's journey from village veterinarian to QEAC-certified education counsellor.",
+  )
+
   return (
     <>
       <section className="page-hero">

@@ -1,6 +1,7 @@
 import '../App.css'
 import study from '../lib/sabina/study-in-australia.json'
 import heroSideImg from '../lib/figma-exports/solutions--mask-group.png'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 function DataTable({ columns, rows }: { columns: string[]; rows: string[][] }) {
   return (
@@ -28,6 +29,11 @@ function DataTable({ columns, rows }: { columns: string[]; rows: string[][] }) {
 }
 
 export default function StudyInAustraliaPage() {
+  usePageMeta(
+    'Study in Australia',
+    'Programs, costs, intakes, and what to prepare for studying in Australia — explained plainly.',
+  )
+
   return (
     <>
       <section className="page-hero">

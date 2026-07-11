@@ -1,9 +1,15 @@
 import '../App.css'
 import contact from '../lib/sabina/contact-us.json'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const isPlaceholder = (value: string) => /^TODO/i.test(value)
 
 export default function ContactPage() {
+  usePageMeta(
+    'Contact Us',
+    'Get in touch with Global Educational Pathways for general enquiries or to start your study-in-Australia application.',
+  )
+
   return (
     <>
       <section className="page-hero">
