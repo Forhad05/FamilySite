@@ -4,7 +4,7 @@ A React + TypeScript + Vite site for **Global Educational Pathways**, a family-r
 
 ## About the business
 
-Global Educational Pathways guides students end-to-end through studying in Australia — from choosing the right course through to visa approval and settling in. Rather than a faceless call centre, it's a small team offering direct, personal attention at every stage, led by a QEAC-certified (Qualified Education Agent Counsellor) lead counsellor.
+Global Educational Pathways guides students end-to-end through studying in Australia — from choosing the right course through to visa approval and settling in. Rather than a faceless call centre, it's a small team offering direct, personal attention at every stage, led by its founder, **Sabina Yasmin**, a QEAC-certified (Qualified Education Agent Counsellor) education counsellor. Her credential details (issuing body, graduate number, issue date) are shown on the [live site's About page](https://forhad05.github.io/FamilySite/about).
 
 Students and families are never charged directly — the consultancy is compensated through standard incentive arrangements with partner universities and colleges upon enrolment.
 

@@ -3,6 +3,7 @@ import about from '../lib/sabina/about.json'
 import startingOverImg from '../lib/figma-exports/solutions--mask-group.png'
 import qeacImg from '../lib/figma-exports/personal-branding--clip-path-group.png'
 import teamImg from '../lib/figma-exports/vip-service--mask-group.png'
+import qeacCertificateImg from '../assets/QEAC.png'
 import { usePageMeta } from '../hooks/usePageMeta'
 
 const founderStoryArt: Record<number, { src: string; alt: string }> = {
@@ -69,6 +70,12 @@ export default function AboutPage() {
               </p>
               <p>{about.credential.note}</p>
             </div>
+          </div>
+          <div className="credential-certificate">
+            <img
+              src={qeacCertificateImg}
+              alt={`${about.credential.holder}'s ${about.credential.title} certificate, issued by ${about.credential.issuedBy}`}
+            />
           </div>
         </div>
       </section>
