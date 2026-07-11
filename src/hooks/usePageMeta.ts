@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const SITE_NAME = 'Global Pathways Education Consulting'
+const SITE_NAME = 'Global Pathways Education'
 
 export function usePageMeta(title: string, description: string) {
   useEffect(() => {
