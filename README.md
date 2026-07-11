@@ -81,3 +81,10 @@ npm run lint     # oxlint
 - `src/lib/figma-exports/` — images exported from the Figma design reference
 - `src/lib/scraped/` — raw reference content pulled from a competitor site for structural inspiration only (not used verbatim anywhere)
 - `src/hooks/usePageMeta.ts` — sets a per-page `<title>`/meta description on route change
+
+## Maintainer
+
+Built and maintained by **Mahafuzul Haque** — Operations & Website Management.
+
+- 5+ years as a Shopify developer (themes & sections)
+- Currently studying for a Bachelor's in Statistics
