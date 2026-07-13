@@ -1,5 +1,6 @@
 import './assets/App.scss'
 import SectionHero from './sections/section-hero'
+import SectionContactForm from './sections/section-contact-form'
 import SectionAbout from './sections/section-about'
 import SectionServices from './sections/section-services'
 import SectionChecklist from './sections/section-checklist'
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <SectionHero />
+      <SectionContactForm />
       <SectionAbout />
       <SectionServices />
       <SectionChecklist />

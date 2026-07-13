@@ -1,0 +1,114 @@
+/* Consultation form — spec from Figma Home Page "Form" group (node 23:122, cached):
+   full-width pale-blue card r=10, centered 44px heading + 22px lede, left column of
+   white r=5 placeholder fields (72px tall), gradient submit button, illustration right. */
+.section-contact-form {
+  .form-card {
+    background: var(--blue-pale);
+    border-radius: 10px;
+    padding: 56px 64px 64px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-lede {
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 780px;
+      margin: 8px auto 48px;
+    }
+  }
+
+  .form-columns {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input,
+    textarea {
+      font: inherit;
+      font-size: 16px;
+      padding: 23px 36px;
+      border-radius: 5px;
+      border: 0;
+      background: var(--white);
+      color: var(--text-h);
+
+      &::placeholder {
+        color: #b2b2b2;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--blue-mid);
+      }
+    }
+
+    textarea {
+      min-height: 230px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 17px;
+      padding: 20px 32px;
+      border: 0;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--blue-light) 0%, var(--blue-mid) 100%);
+      color: var(--white);
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      cursor: pointer;
+      transition: filter 0.2s ease;
+
+      &:hover {
+        filter: brightness(1.08);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--blue-dark);
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  .form-illustration {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .form-card {
+      padding: 32px 20px 40px;
+    }
+
+    .form-lede {
+      font-size: 17px;
+      line-height: 26px;
+    }
+
+    .form-columns {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .contact-form {
+      width: 100%;
+    }
+  }
+}
