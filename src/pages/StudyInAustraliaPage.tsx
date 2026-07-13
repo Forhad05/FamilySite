@@ -1,5 +1,4 @@
-import '../assets/section-data.scss'
-import '../assets/section-checklist.scss'
+import '../assets/StudyInAustraliaPage.scss'
 import study from '../lib/sabina/study-in-australia.json'
 import heroSideImg from '../lib/figma-exports/solutions--mask-group.png'
 import { usePageMeta } from '../hooks/usePageMeta'

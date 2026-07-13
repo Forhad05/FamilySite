@@ -1,5 +1,4 @@
-import '../assets/section-offices.scss'
-import '../assets/section-contact-form.scss'
+import '../assets/ContactPage.scss'
 import contact from '../lib/sabina/contact-us.json'
 import { usePageMeta } from '../hooks/usePageMeta'
 

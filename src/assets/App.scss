@@ -1,3 +1,7 @@
+@use 'section-about';
+@use 'section-services';
+@use 'section-checklist';
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -71,5 +75,13 @@
     .hero-actions {
       justify-content: center;
     }
+  }
+}
+
+.section-faqs {
+  /* Figma FAQ group (33:23): heading centered, ~48px above full-width accordion rows. */
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
   }
 }

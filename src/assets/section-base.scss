@@ -125,3 +125,175 @@
     display: none;
   }
 }
+
+/* Accordion component (src/components/Accordion.tsx) — shared, so bundled with base.
+   Visual spec from Figma Home Page FAQ group (node 33:23): 5px radius, 1px dark border,
+   20px row gap, 22px/500 question, open header = solid blue bar with white text. */
+.accordion {
+  $ease: cubic-bezier(0.4, 0, 0.2, 1);
+  $speed: 0.32s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .accordion-item {
+    background: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    overflow: hidden;
+
+    &.open {
+      .accordion-header button {
+        background: var(--blue-mid);
+        color: var(--white);
+
+        .accordion-chevron {
+          color: var(--white);
+          transform: rotate(180deg);
+        }
+      }
+
+      .accordion-panel {
+        grid-template-rows: 1fr;
+      }
+
+      .accordion-body {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .accordion-header {
+    margin: 0;
+
+    button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 23px 31px 23px 54px;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 28px;
+      color: var(--text-h);
+      transition: background-color $speed $ease, color $speed $ease;
+
+      &:hover {
+        background: var(--blue-pale);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--blue-mid);
+        outline-offset: -2px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .accordion-chevron {
+    flex-shrink: 0;
+    color: var(--blue-mid);
+    transition: transform $speed $ease, color $speed $ease;
+  }
+
+  .accordion-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows $speed $ease;
+  }
+
+  .accordion-panel-clip {
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .accordion-body {
+    padding: 23px 40px 38px 54px;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity $speed $ease, transform $speed $ease;
+  }
+
+  @media (max-width: 900px) {
+    gap: 14px;
+
+    .accordion-header button {
+      padding: 16px 20px;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .accordion-body {
+      padding: 16px 20px 24px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .accordion-item,
+    .accordion-chevron,
+    .accordion-header button,
+    .accordion-panel,
+    .accordion-body {
+      transition: none;
+    }
+  }
+}
+
+/* CTA strip (src/sections/CtaStrip.tsx, rendered on every page via FooterGroup). */
+.cta-banner {
+  padding: 56px 0;
+  background: linear-gradient(120deg, var(--blue-mid) 0%, var(--blue-dark) 100%);
+
+  .page-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  h2 {
+    color: var(--white);
+  }
+
+  .cta-lede {
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 8px;
+  }
+
+  .cta-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    .cta-divider {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .page-width {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .cta-actions {
+      justify-content: center;
+    }
+  }
+}

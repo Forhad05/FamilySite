@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import home from '../lib/sabina/home.json'
 import heroBg from '../lib/figma-exports/home-page--mask-group.png'
-import '../assets/section-hero.scss'
 
 export default function SectionHero() {
   return (

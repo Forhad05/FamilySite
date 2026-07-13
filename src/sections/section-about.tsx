@@ -1,6 +1,5 @@
 import about from '../lib/sabina/about.json'
 import aboutIllustration from '../lib/figma-exports/personal-branding--clip-path-group.png'
-import '../assets/section-about.scss'
 
 export default function SectionAbout() {
   return (

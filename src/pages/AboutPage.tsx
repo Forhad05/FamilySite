@@ -1,4 +1,4 @@
-import '../assets/section-about.scss'
+import '../assets/AboutPage.scss'
 import about from '../lib/sabina/about.json'
 import startingOverImg from '../lib/figma-exports/solutions--mask-group.png'
 import qeacImg from '../lib/figma-exports/personal-branding--clip-path-group.png'

@@ -1,5 +1,4 @@
 import home from '../lib/sabina/home.json'
-import '../assets/section-checklist.scss'
 
 export default function SectionChecklist() {
   return (

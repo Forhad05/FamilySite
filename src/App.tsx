@@ -1,3 +1,4 @@
+import './assets/App.scss'
 import SectionHero from './sections/section-hero'
 import SectionAbout from './sections/section-about'
 import SectionServices from './sections/section-services'

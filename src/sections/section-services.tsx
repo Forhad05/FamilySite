@@ -1,5 +1,4 @@
 import home from '../lib/sabina/home.json'
-import '../assets/section-services.scss'
 
 export default function SectionServices() {
   return (

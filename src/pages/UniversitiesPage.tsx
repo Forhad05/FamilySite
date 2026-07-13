@@ -1,5 +1,4 @@
-import '../assets/section-services.scss'
-import '../assets/section-empty-state.scss'
+import '../assets/UniversitiesPage.scss'
 import universities from '../lib/sabina/universities.json'
 import emptyStateImg from '../lib/figma-exports/search-results--clip-path-group.png'
 import { usePageMeta } from '../hooks/usePageMeta'

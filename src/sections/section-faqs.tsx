@@ -1,19 +1,15 @@
 import home from '../lib/sabina/home.json'
-import '../assets/section-faqs.scss'
+import Accordion from '../components/Accordion'
 
 export default function SectionFaqs() {
   return (
     <section className="section section-tint section-faqs" id="faqs">
       <div className="page-width">
-        <h2 style={{ textAlign: 'center', marginBottom: '48px' }}>{home.faqs.heading}</h2>
-        <div className="faq-list">
-          {home.faqs.items.map((faq) => (
-            <div className="faq-item" key={faq.question}>
-              <h3>{faq.question}</h3>
-              <p>{faq.answer}</p>
-            </div>
-          ))}
-        </div>
+        <h2>{home.faqs.heading}</h2>
+        <Accordion
+          defaultOpen={0}
+          items={home.faqs.items.map((faq) => ({ header: faq.question, body: faq.answer }))}
+        />
       </div>
     </section>
   )
