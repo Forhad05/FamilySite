@@ -1,4 +1,5 @@
-import '../App.css'
+import '../assets/section-data.scss'
+import '../assets/section-checklist.scss'
 import study from '../lib/sabina/study-in-australia.json'
 import heroSideImg from '../lib/figma-exports/solutions--mask-group.png'
 import { usePageMeta } from '../hooks/usePageMeta'
@@ -80,7 +81,7 @@ export default function StudyInAustraliaPage() {
         </div>
       </section>
 
-      <section className="section section-tint">
+      <section className="section section-tint section-checklist">
         <div className="page-width">
           <div className="data-section">
             <h3>{study.intakes.heading}</h3>

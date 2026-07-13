@@ -1,0 +1,102 @@
+.section-about {
+  .credential-badge {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+    padding: 20px 24px;
+    background: var(--blue-pale);
+    border-radius: 12px;
+    max-width: 480px;
+    margin-inline: auto;
+
+    .credential-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+
+    strong {
+      font-size: 15px;
+      color: var(--text-h);
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 4px;
+    }
+  }
+
+  .credential-certificate {
+    max-width: 420px;
+    margin: 24px auto 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .credential-badge {
+      flex-direction: column;
+      text-align: center;
+      margin-inline: auto;
+    }
+  }
+}
+
+/* Not currently rendered anywhere — kept from the original App.css for a future stat/testimonial block. */
+.stat-banner {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  background: var(--blue-pale);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 900px;
+
+  .stat-number {
+    flex-shrink: 0;
+    background: var(--blue-dark);
+    color: var(--white);
+    border-radius: 10px;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .stat-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    p {
+      font-style: italic;
+      font-size: 17px;
+      line-height: 26px;
+    }
+
+    strong {
+      font-style: normal;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .stat-number {
+      margin: 0 auto;
+    }
+  }
+}

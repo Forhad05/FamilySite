@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { IconPhone } from '../lib/Icons'
+import '../assets/section-cta-strip.scss'
 
 export default function CtaStrip() {
   return (

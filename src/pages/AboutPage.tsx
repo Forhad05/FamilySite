@@ -1,4 +1,4 @@
-import '../App.css'
+import '../assets/section-about.scss'
 import about from '../lib/sabina/about.json'
 import startingOverImg from '../lib/figma-exports/solutions--mask-group.png'
 import qeacImg from '../lib/figma-exports/personal-branding--clip-path-group.png'
@@ -58,7 +58,7 @@ export default function AboutPage() {
         )
       })}
 
-      <section className="section">
+      <section className="section section-about">
         <div className="page-width">
           <div className="credential-badge">
             <span className="credential-icon">🎖️</span>

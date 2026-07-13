@@ -1,4 +1,5 @@
-import '../App.css'
+import '../assets/section-services.scss'
+import '../assets/section-empty-state.scss'
 import universities from '../lib/sabina/universities.json'
 import emptyStateImg from '../lib/figma-exports/search-results--clip-path-group.png'
 import { usePageMeta } from '../hooks/usePageMeta'
@@ -18,7 +19,7 @@ export default function UniversitiesPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-services">
         <div className="page-width">
           {universities.items.length === 0 ? (
             <div className="empty-state">

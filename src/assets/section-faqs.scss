@@ -1,0 +1,14 @@
+.section-faqs {
+  .faq-list {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .faq-item h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+  }
+}

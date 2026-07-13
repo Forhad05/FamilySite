@@ -1,0 +1,14 @@
+.section-checklist {
+  .checklist {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    li {
+      line-height: 26px;
+    }
+  }
+}

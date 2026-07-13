@@ -1,4 +1,4 @@
-import '../App.css'
+import '../assets/section-numbered-rows.scss'
 import services from '../lib/sabina/services.json'
 import waveArt from '../lib/figma-exports/who-we-serve--clip-path-group.png'
 import { usePageMeta } from '../hooks/usePageMeta'

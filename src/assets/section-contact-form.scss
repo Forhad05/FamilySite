@@ -1,0 +1,30 @@
+.contact-form {
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-h);
+  }
+
+  input,
+  textarea {
+    font: inherit;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--white);
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+}

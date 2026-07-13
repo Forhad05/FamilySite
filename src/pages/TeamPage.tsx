@@ -1,4 +1,4 @@
-import '../App.css'
+import '../assets/section-team.scss'
 import team from '../lib/sabina/team.json'
 import heroImg from '../lib/figma-exports/vip-service--mask-group.png'
 import { usePageMeta } from '../hooks/usePageMeta'
