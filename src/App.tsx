@@ -8,7 +8,7 @@ import { usePageMeta } from './hooks/usePageMeta'
 
 function App() {
   usePageMeta(
-    'Study Abroad Consultants',
+    '',
     'Global Educational Pathways guides students end-to-end through studying in Australia — university selection, applications, visas, and post-arrival support, led personally by Sabina Yasmin.',
   )
 
